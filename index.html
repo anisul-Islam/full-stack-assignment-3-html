@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML portfolio page</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="header_Section">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">My Skills</a></li>
+                <li><a href="#demo_project">My Demo Project</a></li>
+                <li><a href="#edu_experience"> Education & Experience</a></li>
+                <li><a href="#contact_me">Contact Me</a></li>
+            </ul>
+        </nav>
+        <hr />
+    </header>
+    <!-- main section start -->
+    <main id="main_section">
+        <section class="intro">
+            <img src="./images/profile_photo.jpg" width="150" alt="Profile Photo">
+            <h1>Mostafa Kamal</h1>
+            <p>My name is Mostafa Kamal, and I am passionate about coding. In the future, I see myself as a <em>full stack developer</em>.</p>
+        </section>
+        <hr />
+        <section id="skills">
+            <h2>Skills and Expertise</h2>
+            <h3>Skills:</h3>
+            <ul>
+                <li><strong>Basic HTML</strong></li>
+                <li>Basic CSS</li>
+                <li>Beginner JavaScript</li>
+                <li>Basic Git and GitHub </li>
+                <li>Basics Photoshop</li>
+            </ul>
+            <h3>Expertise:</h3>
+            <ol>
+                <li><strong>Microsoft Word</strong></li>
+                <li><em>Microsoft Excel</em></li>
+                <li>Microsoft PowerPoint</li>
+                <li>Microsoft Access</li>
+            </ol>
+
+        </section>
+        <hr >
+        <section id="demo_project">
+            <h2>My demo Project:</h2>
+            <p>This is my demo portfolio:</p>
+            <a href="https://mkbangla.github.io/Demo-protfolio" target="_blank">visit here</a>
+            <a href="https://mkbangla.github.io/Demo-protfolio" target="_blank"><img src="./images/portfolio1.png" alt="my demo protfolio"></a>
+            <p>Using sample html, css and JavaScript</p>
+            <br >
+            <p>This is a sample CV Project</p>
+            <a href="#"><img src="./images/cv.png" width="950" alt="CV Project" /></a>
+            <p>This is a Google Home Page</p>
+            <a href="#"><img src="./images/google_homepage.png" width="950" alt="googl home page" /></a>
+            
+        </section>
+        <hr />
+        <section id="edu_experience">
+            <h2>Education and Experience</h2>
+            <h3>Education:</h3>
+            <table border="1" cellpadding="10" cellspacing="0">
+                <thead>
+                    <tr>
+                    <th>Degree</th>
+                    <th>University</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>MBA</td>
+                        <td>City University</td>
+                    </tr>
+                    <tr>
+                        <td>BSS</td>
+                        <td>Bangladesh Open University</td>
+                    </tr>
+                    <tr>
+                        <td>Fullstack webdevolopment</td>
+                        <td>Learing with Anisul Islam</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br />
+            <h3>Experince:</h3>
+            <table border="1" cellpadding="10" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Name of Istitute</th>
+                        <th>Position</th>
+                        <th>Service Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>South Point School & College</td>
+                        <td>Computer Instructor</td>
+                        <td>About 12 years</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+        <hr />
+        <section id="contact_me">
+            <h2>Contact Me</h2>
+            <form>
+                <div style="margin-bottom:10px;">                
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" required /> 
+                </div>
+                <div style="margin-bottom:10px;">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" required />
+                </div>
+                <div style="margin-bottom:10px;">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            
+        </section>
+
+    </main>
+    <!-- footer section start -->
+    <footer id="footer_section">
+        Coyright &copy; Mostafa Kamal
+    </footer>
+    
+</body>
+</html>
