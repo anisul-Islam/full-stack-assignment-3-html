@@ -3,9 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Portfolio</title>
 </head>
 <body>
-    
+     <!-- header started -->
+     <header>
+        <nav class="nav-bar">
+             <ul>
+                 <li><a href="#intro">Introduction</a></li>
+                 <li><a href="#skills">Skills and Expertise</a></li>
+                 <li><a href="#Projects">Projects</a></li>
+                 <li><a href="#education">Education and Experience</a></li>
+                 <li><a href="#from">Contact</a></li>
+             </ul>
+         </nav>
+     </header>
+     <main>
+         <!----------------------------
+              introduction 
+             ----------------------------->
+       <div id="intro">
+         <h1>About Me</h1>
+         <img src="images/DP.jpg" alt="">
+         <h2>Hi! I'm <em>Muhammad Ashraful.</em></h2>
+         <p>I'm junior full-stack web developer and I work remotely from Bangladesh.</p>
+       </div>
+       <!-----------------------
+          skills section started
+         -------------------------- -->
+       <div id="skills">
+         <h1>Skills and Expertise</h1>
+           <ul>
+             <li>HTML</li>
+             <li>CSS</li>
+             <li>Javascript</li>
+             <li>Laravel</li>
+             <li>Bootstrap</li>
+           </ul>
+       </div>
+       <!-------------------
+          project section 
+         --------------------->
+        <div id="Projects">
+         <h1>Projects</h1>
+          <div class="project">
+             <h3><a target="_blank" href="https://pinchofyum.com/">Food-Blog</a></h3>
+             <img src="images/foodblogs.png" alt="">
+             <p>A food blogs site and using HTML, CSS ,Bootstrap and JavaScript.It's user-friendly website.</p>
+          <div class="project">
+             <h3><a target="_blank" href="https://www.thescottresort.com/">The Scott Resort & Spa</a></h3>
+             <img src="images/spa.png" alt="">
+             <p>Using HTML, CSS and JavaScript and user-friendly experience across all devices</p>
+          </div>
+          <div class="project">
+             <h3><a target="_blank" href="https://vitra.com/en-de/home">Vitra</a></h3>
+             <img src="images/vitra.png" alt="">
+             <p>Using HTML, CSS,Bootstrap,react and JavaScript and user-friendly experience across all devices</p>
+          </div>
+        </div>
+        <!-------------------
+          Education section 
+         ------------------------->
+         <div id="education">
+             <h1>Education and Experience</h1>
+             <table>
+               <thead>
+                 <tr>
+                     <th>Institution/Company</th>
+                     <th>Degree</th>
+                     <th>Duration</th>
+                 </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>Patgram AB Govt.High school</td>
+                     <td>SSC</td>
+                     <td>2013</td>
+                  </tr>
+                  <tr>
+                     <td>Govt.Kabi Nazrul Collage</td>
+                     <td>HSC</td>
+                     <td>2015</td>
+                  </tr>
+                  <tr>
+                     <td>Dhaka University</td>
+                     <td>BSc</td>
+                     <td>2019</td>
+                  </tr>
+               </tbody>  
+             </table>
+         </div>
+ 
+         <!------------------
+              from started 
+             ----------------->
+ 
+         <div id="from">
+             <h1>Contact Form</h1>
+             <form action="mailto:ashraful90life@gmail.com" method="post" enctype="text/plain">
+                 <div>
+                     <label for="name">Name:</label>
+                     <input type="text" id="name" name="name" required>
+                 </div>
+                 <div>
+                     <label for="email">Email:</label>
+                     <input type="email" id="email" name="email" required>
+                 </div>
+                 <div>
+                     <label for="subject">Subject:</label>
+                     <input type="text" id="subject" name="subject" required>
+                 </div>
+                 <div>
+                     <label for="message">Message:</label>
+                      <textarea id="message" name="message" rows="4" required></textarea>
+                 </div>
+                 <div>
+                     <button type="submit">Submit</button>
+                     <button type="reset">Clear</button>
+                 </div>
+             </form>
+         </div>
+     </main>
+ 
+     <!-----------------------
+          footer section
+         -------------------- -->
+     <footer>
+        <p> © 2024 Muhammad Ashraful.All Rghts Reserved.</p>
+     </footer>
 </body>
 </html>
