@@ -52,12 +52,12 @@ Create a Pull-request. Remember to add your deployed website link to README.md w
 ### 2. **Add social icons inside the footer: usefont-awesome icons**
 ### 3. **Add Google font to your webpage**
 ### 4. **Advanced Table: Use colspan, rowspan**
-### 5. **Advanced Form: **
+### 5. Advanced Form:
 - Use advanced form elements for your webpage.
 - send submitted form data to your email using formspree.io
-### 6. **HTML Multimedia **
+### 6. HTML Multimedia
 - Add Google map in the contact section
-### 7. **HTML5 features **
+### 7. HTML5 features
 - Add a progress bar, and meter to your webpage
 #### Submission
 Create a Pull-request. Remember to add your deployed website link to README.md when making the PR.  
