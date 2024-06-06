@@ -3,21 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="keywords"
+      content="portfolio,information,Mahabub-Jamil,identity,about"
+    />
+    <meta
+      name="description"
+      content="This is a portfolio website, where anyone can know about me, my cariculm, read my blogs and also can able to contact with me"
+    />
     <title>Mahabub Jamil</title>
+    <!--Font-------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Icon-------->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--Style-------->
+    <style>
+      body {
+        font-family: "Lato", sans-serif;
+        background-color: rgba(250, 215, 228, 0.644);
+      }
+    </style>
   </head>
 
   <body>
-    <!--Section 1: Header----------------------------------------------->
+    <!--Header----------------------------------------------->
     <header id="header">
       <div>
         <nav>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#project">Project</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="hobbies.html">Hobies</a></li>
+            <li>
+              <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+            </li>
+            <li>
+              <a href="#contact"
+                ><i class="fa-solid fa-address-book"></i>Contact</a
+              >
+            </li>
+            <li>
+              <a href="#project"
+                ><i class="fa-solid fa-diagram-project"></i>Projects</a
+              >
+            </li>
+            <li>
+              <a href="#education"
+                ><i class="fa-solid fa-graduation-cap"></i>Education</a
+              >
+            </li>
+            <li>
+              <a href="blog.html"><i class="fa-solid fa-blog"></i>Blog</a>
+            </li>
+            <li>
+              <a href="hobbies.html"
+                ><i class="fa-regular fa-face-laugh-beam"></i>Hobbies</a
+              >
+            </li>
           </ul>
         </nav>
       </div>
@@ -38,203 +89,267 @@
         <hr />
       </div>
     </header>
-    <!--Section: Skills-------------------------------------------------->
-    <section id="skill">
-      <h2>Skills & Expertise</h2>
-      <div>
-        <h3>Technical skills:</h3>
-        <table border="1" cellpadding="15" cellspacing="0">
-          <thead>
-            <tr>
-              <th>Language</th>
-              <th>Proficiency</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Java</td>
-              <td>Intermediate</td>
-            </tr>
-            <tr>
-              <td>Python</td>
-              <td>Intermediate</td>
-            </tr>
-            <tr>
-              <td>C/C++</td>
-              <td>Expert</td>
-            </tr>
-            <tr>
-              <td>Dart</td>
-              <td>Beginner</td>
-            </tr>
-          </tbody>
-        </table>
-        <h3>Areas of Expertise:</h3>
-        <ol type="A">
-          <li><strong>App Development:</strong></li>
-          <ul>
-            <li>Desiging user-friendly interfaces</li>
-            <li>Implementing responsive layouts</li>
-          </ul>
-          <li><strong>Desktop Applications:</strong></li>
-          <ul>
-            <li>Creating user-friendly interfaces</li>
-            <li>Handling data persistence(database,files)</li>
-            <li>Using GUI libraries: JavaFX, Java Swing</li>
-          </ul>
-          <li><strong>Web Base Applications:</strong></li>
-          <ul>
-            <li>Learning</li>
-          </ul>
-          <li><strong>Graphic Design</strong></li>
-          <ul>
-            <li>Figma</li>
-            <li>Adobe Photoshop</li>
-            <li>Adobe Illustrator</li>
-          </ul>
-          <li><strong>Digital Marketing</strong></li>
-          <ul>
-            <li>SEO - onpage/offpage</li>
-            <li>Social Media Marketing</li>
-          </ul>
-        </ol>
-      </div>
-    </section>
-    <!--Section: Projects----------------------------------------------->
-    <section id="project">
-      <div>
-        <h2>Projects</h2>
-        <ol type="A">
-          <li>Mobile App</li>
-          <ul>
-            <li>
-              <a
-                href="https://github.com/Mahabub-Jamil/ShoeStorePractice_Android/tree/master"
-                >Shoe Store</a
-              >
-            </li>
-          </ul>
-          <li>Desktop Base Appliation</li>
-          <ul>
-            <li>
-              <a
-                href="https://github.com/Mahabub-Jamil/Student-Management-System"
-                >Student Management System</a
-              >
-            </li>
-            <li><a href="#">Germents Inventory Management System</a></li>
-            <li><a href="#">LC Management System</a></li>
-          </ul>
-          <li>AI</li>
-          <ul>
-            <li>
-              <a href="https://github.com/Mahabub-Jamil/Heart_Disease_Analysis"
-                >Heart Disease Analysis</a
-              >
-            </li>
-          </ul>
-        </ol>
-      </div>
-    </section>
-    <!--Section: Education and Experience-------------------------------->
-    <section id="education">
-      <h2>Education and Expertise</h2>
-      <div>
-        <table border="1" cellpadding="5" cellspacing="0">
-          <thead>
-            <tr>
-              <th>Education</th>
-              <th>Institutions</th>
-              <th>Working Experience</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Secondary School Certificate</td>
-              <td>Hasan Ali Government High School, Chandpur</td>
-              <td rowspan="3" align="center">NULL</td>
-            </tr>
-            <tr>
-              <td>Higher Secondary Certificate</td>
-              <td>Deffodil International Colledge, Chandpur</td>
-            </tr>
-            <tr>
-              <td>
-                Bechelor of science in Computer Science &
-                Engineering(Undergraduate).
-              </td>
-              <td>Bangladesh University Of Business & Technology, Dhaka</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-    <!--Section: Contact form--------------------------------------------->
-    <section id="contact">
-      <h2>Contact Form</h2>
-      <div>
-        <form action="#">
-          <div>
-            <table cellpadding="10">
-              <tbody>
-                <tr>
-                  <td>
-                    <label for="name"
-                      ><b><em>Name:</em></b></label
-                    >
-                  </td>
-                  <td><input type="text" id="name" name="name" /></td>
-                </tr>
-                <tr>
-                  <td>
-                    <label for="email"
-                      ><b><em>Email:</em></b></label
-                    >
-                  </td>
-                  <td><input type="email" id="email" name="email" /></td>
-                </tr>
-                <tr>
-                  <td>
-                    <label for="Subject"
-                      ><b><em>Subject:</em></b></label
-                    >
-                  </td>
-                  <td><input type="text" id="subject" name="subject" /></td>
-                </tr>
-                <tr>
-                  <td>
-                    <label for="message"
-                      ><b><em>Message:</em></b></label
-                    >
-                  </td>
-                  <td>
-                    <textarea
-                      name="message"
-                      id="message"
-                      cols="19"
-                      rows="5"
-                    ></textarea>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div>
-            <button type="submit">Submit</button>
-            <button type="reset">Clear</button>
-          </div>
-        </form>
-        <h4><a href="#header">Go to top</a></h4>
-      </div>
-    </section>
-    <!--Section: Footer------------------------------------------------->
+    <main>
+      <!--Section: Skills-------------------------------------------------->
+      <section id="skill">
+        <h2>Skills & Expertise</h2>
+        <div>
+          <h3>Technical skills:</h3>
+          <table border="1" cellpadding="15" cellspacing="0">
+            <thead>
+              <tr>
+                <th>Language</th>
+                <th>Proficiency</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Java</td>
+                <td>Intermediate</td>
+              </tr>
+              <tr>
+                <td>Python</td>
+                <td>Intermediate</td>
+              </tr>
+              <tr>
+                <td>C/C++</td>
+                <td>Expert</td>
+              </tr>
+              <tr>
+                <td>Dart</td>
+                <td>Beginner</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Areas of Expertise:</h3>
+          <ol type="A">
+            <li><strong>App Development:</strong></li>
+            <ul>
+              <li>Desiging user-friendly interfaces</li>
+              <li>Implementing responsive layouts</li>
+            </ul>
+            <li><strong>Desktop Applications:</strong></li>
+            <ul>
+              <li>Creating user-friendly interfaces</li>
+              <li>Handling data persistence(database,files)</li>
+              <li>Using GUI libraries: JavaFX, Java Swing</li>
+            </ul>
+            <li><strong>Web Base Applications:</strong></li>
+            <ul>
+              <li>Learning</li>
+            </ul>
+            <li><strong>Graphic Design</strong></li>
+            <ul>
+              <li>Figma</li>
+              <li>Adobe Photoshop</li>
+              <li>Adobe Illustrator</li>
+            </ul>
+            <li><strong>Digital Marketing</strong></li>
+            <ul>
+              <li>SEO - onpage/offpage</li>
+              <li>Social Media Marketing</li>
+            </ul>
+          </ol>
+        </div>
+      </section>
+      <!--Section: Projects----------------------------------------------->
+      <section id="project">
+        <div>
+          <h2>Projects</h2>
+          <ol type="A">
+            <li>Mobile App</li>
+            <ul>
+              <li>
+                <a
+                  href="https://github.com/Mahabub-Jamil/ShoeStorePractice_Android/tree/master"
+                  >Shoe Store</a
+                >
+              </li>
+            </ul>
+            <li>Desktop Base Appliation</li>
+            <ul>
+              <li>
+                <a
+                  href="https://github.com/Mahabub-Jamil/Student-Management-System"
+                  >Student Management System</a
+                >
+              </li>
+              <li><a href="#">Germents Inventory Management System</a></li>
+              <li><a href="#">LC Management System</a></li>
+            </ul>
+            <li>AI</li>
+            <ul>
+              <li>
+                <a
+                  href="https://github.com/Mahabub-Jamil/Heart_Disease_Analysis"
+                  >Heart Disease Analysis</a
+                >
+              </li>
+            </ul>
+          </ol>
+        </div>
+      </section>
+      <!--Section: Education and Experience-------------------------------->
+      <section id="education">
+        <h2>Education and Expertise</h2>
+        <div>
+          <table border="1" cellpadding="5" cellspacing="0">
+            <thead>
+              <tr>
+                <th>Education</th>
+                <th>Institutions</th>
+                <th>Working Experience</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Secondary School Certificate</td>
+                <td>Hasan Ali Government High School, Chandpur</td>
+                <td rowspan="3" align="center">NULL</td>
+              </tr>
+              <tr>
+                <td>Higher Secondary Certificate</td>
+                <td>Deffodil International Colledge, Chandpur</td>
+              </tr>
+              <tr>
+                <td>
+                  Bechelor of science in Computer Science &
+                  Engineering(Undergraduate).
+                </td>
+                <td>Bangladesh University Of Business & Technology, Dhaka</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <!--Section: Contact form--------------------------------------------->
+      <section id="contact">
+        <h2>Contact Form</h2>
+        <div>
+          <form action="https://formspree.io/f/mqkrvndk" method="post">
+            <div>
+              <table cellpadding="10">
+                <tbody>
+                  <tr>
+                    <td>
+                      <label for="name"
+                        ><b><em>Name:</em></b></label
+                      >
+                    </td>
+                    <td>
+                      <input type="text" id="name" name="name" required />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="email"
+                        ><b><em>Email:</em></b></label
+                      >
+                    </td>
+                    <td>
+                      <input type="email" id="email" name="email" required />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="Subject"
+                        ><b><em>Subject:</em></b></label
+                      >
+                    </td>
+                    <td>
+                      <input type="text" id="subject" name="subject" required />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="message"
+                        ><b><em>Message:</em></b></label
+                      >
+                    </td>
+                    <td>
+                      <textarea
+                        name="message"
+                        id="message"
+                        cols="19"
+                        rows="5"
+                        required
+                      ></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="date"
+                        ><em><b>Date:</b></em></label
+                      >
+                    </td>
+                    <td><input type="date" required /></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="menubar"
+                        ><em><b>Category</b></em></label
+                      >
+                    </td>
+                    <td>
+                      <select name="menubar" id="menubar" required>
+                        <option value="Business">Business</option>
+                        <option value="Job opportunity">Job opportunity</option>
+                        <option value="Appoinment">Appoinment</option>
+                        <option value="Study">Study</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="url"
+                        ><em><b>Website:</b></em></label
+                      >
+                    </td>
+                    <td><input type="url" pattern="https?://+" required /></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="age"
+                        ><em><b>Age:</b></em></label
+                      >
+                    </td>
+                    <td><input type="number" max="55" min="18" required /></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="file"
+                        ><em><b>Attatchments:</b></em></label
+                      >
+                    </td>
+                    <td><input type="file" /></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div>
+              <button type="submit">Submit</button>
+              <button type="reset">Clear</button>
+            </div>
+          </form>
+          <h3>
+            <a href="#header"><i class="fa-solid fa-arrow-up-a-z"></i>Go to</a>
+          </h3>
+        </div>
+      </section>
+    </main>
+    <!--Footer------------------------------------------------->
     <footer id="footer">
       <div>
         <hr />
         <p>Copyright &copy; reserved by Mahabub Jamil</p>
-        <a href="mailto:rmahabub@gmail.com">Email Me</a><br />
-        <a href="tel:01871245564">Connect me with phone calls</a><br />
-        <a href="https://www.linkedin.com/in/rmahabub03/">Linkedin</a>
+        <a href="mailto:rmahabub@gmail.com"
+          ><i class="fa-solid fa-envelope"></i>Send mail</a
+        ><br />
+        <a href="tel:01871245564"><i class="fa-solid fa-phone"></i>Make calls</a
+        ><br />
+        <a href="https://www.linkedin.com/in/rmahabub03/"
+          ><i class="fa-brands fa-linkedin"></i>Linkedin</a
+        >
       </div>
     </footer>
   </body>
