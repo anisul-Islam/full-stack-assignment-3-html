@@ -1,9 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equive="X-UA-compatiable" content="ie-edge" />
+    <meta  name="keywords" content="portfolio, html_pages, learn_html"/>
+    <meta name="description" content="Nature of Bangladesh" />
     <title>HTML portfolio page</title>
+    <!-- font Awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Google font link -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+<!-- css style -->
+<style>
+    body{
+        background-color: #daceda;
+        .poppins-regular {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+}
+    }
+</style>
 </head>
 <body>
     <!-- Header Section -->
@@ -44,6 +67,24 @@
                 <li>Microsoft PowerPoint</li>
                 <li>Microsoft Access</li>
             </ol>
+            <!-- skills with progress bar -->
+            <h3>Skills Level:</h3>
+            <label for="html">HTML</label>
+            <progress id="html" value="80" max="100">80%</progress>
+            <br>
+            <label for="css">CSS</label>
+            <progress id="css" value="70" max="100">70%</progress>
+            <br>
+            <label for="js">JavaScript</label>
+            <progress id="js" value="50" max="100">50%</progress>
+            <br>
+            <!-- using meter tag -->
+            <h3>Expertise lavel:</h3>
+            <label for="msword">Microsoft Word</label>
+            <meter id="msword" value="90" max="100">90%</meter>
+            <br>
+            <label for="msexcel">Microsoft Excel</label>
+            <meter id="msexcel" value="80" max="100"></meter>
 
         </section>
         <hr >
@@ -78,11 +119,17 @@
                     </tr>
                     <tr>
                         <td>BSS</td>
-                        <td>Bangladesh Open University</td>
+                        <td rowspan="2">Bangladesh Open University</td>
                     </tr>
                     <tr>
-                        <td>Fullstack webdevolopment</td>
-                        <td>Learing with Anisul Islam</td>
+                        <td>HSC</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Learn with Anisul Islam</td>
+                    </tr>
+                    <tr>
+                        <td>Git & GitHub</td>
+                        <td>HTML</td>
                     </tr>
                 </tbody>
             </table>
@@ -107,9 +154,25 @@
 
         </section>
         <hr />
+
         <section id="contact_me">
             <h2>Contact Me</h2>
-            <form>
+            <address>
+                <a href="mailto:@test.com">Mostafa Kamal</a>
+                <br>
+                mobile: 8801700000
+            </address>
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7304.112635414324!2d89.97002364501665!3d23.74537103529719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fe203962112d69%3A0x81bfa24eb3ce96d8!2sHarirampur!5e0!3m2!1sen!2sbd!4v1717692678849!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="sample" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            
+        </section>
+        <hr />
+
+        <section id="feedback">
+            <form action="https://formspree.io/f/mleqyvjv"
+            method="POST">
                 <div style="margin-bottom:10px;">                
                     <label for="name">Name: </label>
                     <input type="text" name="name" id="name" required /> 
@@ -118,18 +181,34 @@
                     <label for="email">Email: </label>
                     <input type="email" name="email" id="email" required />
                 </div>
+                <div style="margin-bottom:10px">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div>
+                    <label for="gender">Male </label>
+                    <input type="radio" id="gender" name="gender" value="Male" />
+                    <label for="gender">Female</label>
+                    <input type="radio" id="gender" name="gender" value="Female" />
+                </div>
                 <div style="margin-bottom:10px;">
                     <label for="message">Message: </label>
                     <textarea name="message" id="message"></textarea>
                 </div>
                 <button type="submit">Submit</button>
             </form>
-            
         </section>
 
     </main>
     <!-- footer section start -->
     <footer id="footer_section">
+        <div id="social_icon">
+            <ul>
+                <li><a href="https://www.facebook.com/mostafa.kamal.24/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.youtube.com/@learnwithmostafakamal" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/mkbangla"target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+        </div>
         Coyright &copy; Mostafa Kamal
     </footer>
     
