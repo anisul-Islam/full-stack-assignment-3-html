@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <h1>Iftekhar Sakib</h1>
+      <p><strong>Welcome to my portfolio!</strong></p>
+    </header>
+    <!-- nav bar -->
+    <nav>
+      <div class="menu_wrapper">
+        <a href="index.html">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education-experience">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+    <!-- main -->
+    <main>
+      <!-- intro -->
+      <section id="introduction">
+        <h2>Introduction</h2>
+        <p>
+          Hello! I am Iftekhar Sakib, a passionate web development lerner with
+          an interest in creating dynamic and responsive web applications. My
+          career goal is to become a lead developer and contribute to innovative
+          projects that make a difference.
+        </p>
+      </section>
+      <!-- skills -->
+      <section id="skills">
+        <h2>Skills and Expertise</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>git (intermediate)</li>
+          <li>C (intermediate)</li>
+          <li>CPP (beginner)</li>
+          <li>Java (intermediate)</li>
+        </ul>
+      </section>
+      <!-- projects -->
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects_grid">
+          <div>
+            <h3>GST Demo</h3>
+            <img src="./img/project-1.png" alt="Project 1" />
+            <br />
+            <a href="">Visit</a>
+          </div>
+          <div>
+            <h3>CSTU CSE-02</h3>
+            <img src="./img/project-2.png" alt="Project 2" />
+            <br />
+            <a href="">Visit</a>
+          </div>
+          <div>
+            <h3>iceCream Shop</h3>
+            <img src="./img/project-3.png" alt="Project 3" />
+            <br />
+            <a href="">Visit</a>
+          </div>
+        </div>
+      </section>
+      <!-- education -->
+      <section id="education-experience">
+        <h2>Education and Experience</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Institution/Company</th>
+              <th>Degree/Position</th>
+              <th>Duration</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Chandpur Science and Technology University</td>
+              <td>Bachelor of Science in Computer Science</td>
+              <td>2023-present</td>
+            </tr>
+            <tr>
+              <td>Higher Secondary</td>
+              <td>Dept. of Science</td>
+              <td>2019-2021</td>
+            </tr>
+            <tr>
+              <td>Secondary</td>
+              <td>Science</td>
+              <td>2014-2019</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!-- contact me -->
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" required />
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer>
+      <p>&copy; 2024 Iftekhar Sakib. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

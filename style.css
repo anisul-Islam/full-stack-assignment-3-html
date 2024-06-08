@@ -1,0 +1,116 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  margin: 5px 0;
+}
+
+form button {
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+
+/*****new css*****/
+.projects_grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.projects_grid > div {
+  background: whitesmoke;
+  padding-block: 10px;
+  padding-inline: 20px;
+  border-radius: 5px;
+}
+
+.projects_grid > div > h3 {
+  margin: 10px;
+}
+.projects_grid img{
+ width: 100%;
+}
+header > h1 {
+  margin: 10px;
+  margin-bottom: 0;
+}
+header > p {
+  margin: 20px;
+  margin-top: 10px;
+}
+nav {
+  display: flex;
+  justify-content: center;
+}
+.menu_wrapper {
+  display: flex;
+  gap: 10px;
+}
+.menu_wrapper > a {
+  display: block;
+}
+.menu_wrapper:hover > :not(:hover) {
+  opacity: 0.2;
+}
+
+/**responsive css***/
+
+@media screen and (min-width: 900px) {
+  form {
+    width: 50%;
+  }
+  table {
+    width: 50%;
+  }
+  .projects_grid {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+}
