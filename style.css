@@ -24,12 +24,11 @@ footer {
 }
 
 table {
-  width: 100%;
   border-collapse: collapse;
-  margin: 20px 0;
+  margin: auto;
 }
 
-table,
+
 th,
 td {
   border: 1px solid #ddd;
@@ -107,6 +106,7 @@ nav {
   }
   table {
     width: 50%;
+    margin: 0px;
   }
   .projects_grid {
   display: flex;
