@@ -3,8 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Muhammad Ashraful">
+    <meta name="keywords" content="Portfolio, ashraful">
     <title>My Portfolio</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"rel="stylesheet">
+<!--      css style -->
     <style>
+         body{
+            background-color: rgb(250, 246, 242);
+            font-family: "Poppins", sans-serif;     
+        }   
         nav ul {
              display: flex;
         }
@@ -49,9 +60,10 @@
              </ul>
          </nav>
      </header>
+<!--     main started -->
      <main>
          <!----------------------------
-              introduction 
+              section:introduction 
              ----------------------------->
        <div id="intro">
          <h1>About Me</h1>
@@ -60,7 +72,7 @@
          <p>I'm junior full-stack web developer and I work remotely from Bangladesh.</p>
        </div>
        <!-----------------------
-          skills section started
+          section:skills 
          -------------------------- -->
        <div id="skills">
          <h1>Skills and Expertise</h1>
@@ -71,9 +83,32 @@
              <li>Laravel</li>
              <li>Bootstrap</li>
            </ul>
+            <ol>
+            <li>Wordpress</li>
+            <li>PHP</li>
+            <li>C++</li>
+           </ol>
        </div>
+        <div>
+        <h3>skill progress</h3>
+            <div>
+              <label for="htmlProgress">HTML:</label>
+              <progress id="htmlProgress" value="90" max="100">90</progress>
+            </div>
+            <div>
+               <label for="cssProgress">CSS:</label>
+               <progress id="cssProgress" value="85" max="100">85</progress>
+            </div>
+            <div>
+                <label for="bootstrapProgress">Bootstrap:</label>
+                <progress id="bootstrapProgress" value="75" max="100">75</progress>
+            </div> 
+            <div>
+               <label for="jsProgress">JS:</label>
+               <progress id="jsProgress" value="65" max="100">65</progress>
+        </div>
        <!-------------------
-          project section 
+         section: project 
          --------------------->
         <div id="Projects">
          <h1>Projects</h1>
@@ -91,18 +126,32 @@
              <img src="images/vitra.png" alt="">
              <p>Using HTML, CSS,Bootstrap,react and JavaScript and user-friendly experience across all devices</p>
           </div>
+           <div>
+            <video width="350px" height="300px" controls>
+
+
+                <source src="./media/videos/islamic.mp4" type="video/mp4">
+                your broswer cannot suport this video
+                </video>
+          </div>
         </div>
         <!-------------------
-          Education section 
+          section : Education 
          ------------------------->
          <div id="education">
              <h1>Education and Experience</h1>
+             <div>
+               <label for="meter"> Experience level:</label>
+         
+               <meter value="7" min="0" max="10" id=""> 7 years Experience</meter>
+             </div>
              <table>
                <thead>
                  <tr>
                      <th>Institution/Company</th>
                      <th>Degree</th>
                      <th>Duration</th>
+                     <th>Board</th>
                  </tr>
                </thead>
                <tbody>
@@ -110,6 +159,7 @@
                      <td>Patgram AB Govt.High school</td>
                      <td>SSC</td>
                      <td>2013</td>
+                      <tr rowspan="2">Dhaka</tr>
                   </tr>
                   <tr>
                      <td>Govt.Kabi Nazrul Collage</td>
@@ -126,12 +176,12 @@
          </div>
  
          <!------------------
-              from started 
+             section: from 
              ----------------->
  
          <div id="from">
              <h1>Contact Form</h1>
-             <form action="mailto:ashraful90life@gmail.com" method="post" enctype="text/plain">
+             <form action="ashraful90life@gmail.com" method="POST">
                  <div>
                      <label for="name">Name:</label>
                      <input type="text" id="name" name="name" required>
@@ -141,8 +191,24 @@
                      <input type="email" id="email" name="email" required>
                  </div>
                  <div>
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" min="18" max="40" required>
+                </div>
+                <div>
+                    <label for="website">Website:</label>
+                    <input type="url" id="website" name="website" pattern="https">
+                </div>
+                 <div>
                      <label for="subject">Subject:</label>
-                     <input type="text" id="subject" name="subject" required>
+                     <select name="subject" id="subject">
+                        <option value="opinion">Opinion</option>
+                        <option value="feedback">feedback</option>
+                        <option value="job">Job opportunity</option>
+                     </select>
+                 </div>
+                 <div>
+                    <label for="images">Upload Images:</label>
+                    <input type="file" id="images" name="images" accept="images/*">
                  </div>
                  <div>
                      <label for="message">Message:</label>
@@ -154,6 +220,33 @@
                  </div>
              </form>
          </div>
+            <!-- section:social site -->
+          <div class="icons">
+            <h3>Follow Me</h3>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/profile.php?id=100014427856879&mibextid=LQQJ4d" target="_blank">
+                     <i class="fa-brands fa-facebook"></i>
+                        Facebook
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCp5RV5oGY25w3XDWIBViNig" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                        Youtube
+                    </a>
+                </li>
+            </ul><ul>
+                <li>
+                    <a href="https://www.facebook.com/share/v/mNG4zBkW1WDx4j3S/?mibextid=WC7FNe" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                        Linkedin
+                    </a>
+                </li>
+            </ul>
+          </div>
      </main>
  
      <!-----------------------
@@ -161,6 +254,11 @@
          -------------------- -->
      <footer>
         <p> © 2024 Muhammad Ashraful.All Rghts Reserved.</p>
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14611.39064118263!2d90.39275039820056!3d23.717133604625904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8fd46c31205%3A0xf7b6fb1e0624cd61!2z4Kas4KaC4Ka24Ka-4KayLCDgpqLgpr7gppXgpr4!5e0!3m2!1sbn!2sbd!4v1717918174143!5m2!1sbn!2sbd" title="My second home" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+        </div>
      </footer>
+    <!-- font awesome -->
+     <script src="https://kit.fontawesome.com/1f67df04a8.js" crossorigin="anonymous"></script>
 </body>
 </html>
