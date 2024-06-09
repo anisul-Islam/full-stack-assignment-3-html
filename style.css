@@ -25,9 +25,9 @@ footer {
 
 table {
   border-collapse: collapse;
-  margin: auto;
+  width: 100%;
+  table-layout: fixed;
 }
-
 
 th,
 td {
@@ -72,8 +72,8 @@ form button {
 .projects_grid > div > h3 {
   margin: 10px;
 }
-.projects_grid img{
- width: 100%;
+.projects_grid img {
+  width: 100%;
 }
 header > h1 {
   margin: 10px;
@@ -109,8 +109,8 @@ nav {
     margin: 0px;
   }
   .projects_grid {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-}
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
 }
