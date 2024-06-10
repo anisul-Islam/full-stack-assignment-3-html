@@ -3,7 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="razibul Islam" />
+    <meta name="keywords" content="portfolio,html, razibul Islam" />
+
     <title>Document</title>
+    <!--add font_awesome cdn defination-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--google font link (https://fonts.google.com/)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--body_background color-->
+    <style>
+      body {
+        background-color: bisque;
+        font-family: "Oswald", sans-serif;
+      }
+    </style>
   </head>
   <body>
     <nav>
@@ -27,7 +54,7 @@
       </ul>
     </nav>
 
-    <header>
+    <header id="Introduction">
       <h1>Razibul Islam Zim</h1>
       <br />
       <img
@@ -38,9 +65,6 @@
       />
       <p><em>A passionate Penetration Tester and Frontend Developer</em></p>
       <hr />
-    </header>
-
-    <header id="Introduction">
       <!--Section:Introduction-->
       <h2>
         <mark><em>Introduction:</em></mark>
@@ -58,15 +82,51 @@
       <h2>
         <mark><em>Skill:</em></mark>
       </h2>
-      <ul type="square">
-        <li>HTML</li>
-        <li>
-          <mark>CSS</mark>
-        </li>
-        <li>
-          <mark>JAVASCRIPT</mark>
-        </li>
-      </ul>
+      <div>
+        <body>
+          <table border="1" cellpadding="5" cellspacing="0">
+            <thead>
+              <tr>
+                <th>Technology</th>
+                <th>Proficiency</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>HTML</td>
+                <td rowspan="2">Expert</td>
+              </tr>
+              <tr>
+                <td>CSS</td>
+              </tr>
+              <tr>
+                <td>JAVASCRIPT</td>
+                <td>Basic</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+      <div>
+         <!--add some html_5 tag-->
+    <h3>Skill Progress:</h3>
+    <div>
+      <label for="HTML Progress">HTML:</label>
+      <progress id="HTML Progress" value="90" max="100">90%</progress>
+    </div>
+    <div>
+      <label for="CSSProgress">CSS:</label>
+      <progress id="CSSProgress" value="40" max="100">40%</progress>
+    </div>
+   <div>
+    <label for="JAVA Progress">HTML:</label>
+    <progress id="JAVA Progress" value="20" max="100">20%</progress>
+   </div>
+    <h3>Experience Level:</h3>
+    <label for="Experience_Progress"> Experience </label>
+    <meter id="Experience_Progress" min="0" max="10" value="2">
+      2 years experience
+    </meter>
+      </div>
       <h3>The Project Management Lifecycle</h3>
       <ol>
         <li><strong>Initiating</strong></li>
@@ -124,7 +184,7 @@
       <h2>
         <mark><em>Contact:</em></mark>
       </h2>
-      <form>
+      <form action="https://formspree.io/f/xknddwve" method="POST">
         <div>
           <lebel for="Name"> Name: </lebel> <br />
           <input type="text" id="name " name="name" required />
@@ -135,7 +195,24 @@
         </div>
         <div>
           <lebel for="Subject"> Subject: </lebel> <br />
-          <input type="text" id="Subject " name="Subject" required />
+          <select type="subject" id="Subject " name="Subject" required>
+            <option value="job">job</option>
+            <option value="inquiry">inquiry</option>
+            <option value="feedback">feedback</option>
+          </select>
+        </div>
+        <div>
+          <label for="Image">Upload Image:</label>
+          <input type="file" id="Image" name="Image" accept="image/*" />
+        </div>
+
+        <div>
+          <label for="age">AGE:</label>
+          <input type="number" name="age" id="age" min="18" max="55" required />
+        </div>
+        <div>
+          <label for="website">Website:</label>
+          <input type="url" id="website" name="website" pattern="https?://.+" />
         </div>
         <div>
           <label for="message">Message:</label> <br />
@@ -146,16 +223,34 @@
           <button type="submit">Submit</button>
           <button type="reset">Clear</button>
         </div>
+        <br/>
       </form>
+      <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58839.433906363316!2d89.47908511370153!3d22.822293767652013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ff90089b891173%3A0xbd0758d8f997065b!2sShib%20Bari%20Circle%2C%20Khulna!5e0!3m2!1sen!2sbd!4v1718025850843!5m2!1sen!2sbd"
+        title="home map"
+        width="300" 
+         height="250" 
+         style="border:0;" 
+         allowfullscreen="" 
+         loading="lazy" 
+         referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
       <p>Copyright reserved by &copy; Razibul Islam Zim</p>
 
       <!--absolut link -->
-      <a target="_blank" href="https://github.com/razibul-zim"
-        >My Github repo</a
+      <a target="_blank" href="https://github.com/razibul-zim">
+        <i class="fa-brands fa-github"></i>
+        Github account</a
       >
+      <br />
+
       <!--relative link-->
-      <a href="tel:01860664122">Call Me</a>
-      <a href="mailto:rjrajibulislam1971@gmail.com">E-mail Me</a>
+      <a href="tel:01860664122"> <i class="fa-solid fa-phone"></i>Call Me</a>
+      <br />
+      <a href="mailto:rjrajibulislam1971@gmail.com"
+        ><i class="fa-regular fa-envelope"></i>E-mail Me</a
+      >
       <!--End_footer:Contact Form-->
     </footer>
   </body>
