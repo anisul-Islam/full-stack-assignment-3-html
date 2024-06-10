@@ -212,12 +212,32 @@
 
                 <div>
                     <label for="email">Email :</label>
-                    <input id="email" type="text" name="email" required />
+                    <input id="email" type="email" name="email" required />
+                </div><br>
+
+                <div>
+                    <label for="age">Age :</label>
+                    <input id="age" type="number" name="email" min="18" required />
+                </div><br>
+
+                <div>
+                    <label for="website">Website :</label>
+                    <input id="website" type="url" name="website"  pattern="https?://.+" />
+                </div><br>
+
+                <div>
+                    <label for="image">Upload Image :</label>
+                    <input id="image" type="file" name="image" accept="image/*"/>
                 </div><br>
 
                 <div>
                     <label for="subject">Subject :</label>
-                    <input id="subject" type="text" name="subject" required />
+                    <select name="subject" id="subject">
+                        <option value="inquiry">Inquiry</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="job">Job Opportunity</option>
+                        <option value="help">Any Help</option>
+                    </select>
                 </div><br>
 
                 <div>
