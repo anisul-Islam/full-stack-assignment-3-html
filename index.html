@@ -204,7 +204,8 @@
         <section id="Contact_Form">
             <h2>Contact Form</h2>
             <hr>
-            <form>
+            <form action="https://formspree.io/f/mayrryzk"
+            method="POST">
                 <div>
                     <label for="name">Name :</label>
                     <input id="name" type="text" name="name" required />
@@ -217,17 +218,17 @@
 
                 <div>
                     <label for="age">Age :</label>
-                    <input id="age" type="number" name="email" min="18" required />
+                    <input id="age" type="number" name="age" min="18" required />
                 </div><br>
 
                 <div>
                     <label for="website">Website :</label>
-                    <input id="website" type="url" name="website"  pattern="https?://.+" />
+                    <input id="website" type="url" name="website" pattern="https?://.+" />
                 </div><br>
 
                 <div>
                     <label for="image">Upload Image :</label>
-                    <input id="image" type="file" name="image" accept="image/*"/>
+                    <input id="image" type="file" name="image" accept="image/*" />
                 </div><br>
 
                 <div>
