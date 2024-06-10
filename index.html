@@ -1,23 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- supporting unicode, bangla, emogi and so on. -->
     <meta charset="UTF-8">
+    <!-- adjust different screen size. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- supporting older version of browser. -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- supporting searching bar to find our website. -->
+    <meta name="keywords" content="sojun chandra,sojun chandra shill,sojun15,210215">
+    <!-- form submiting url -->
+    <link rel="stylesheet" href="https://formspree.io/f/xayrgvag">
+    <!-- google map connecting url. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- google font url. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!-- font awesome url. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <title>HTML Portfolio</title>
 </head>
-<body>
-    <header>
-        <em><h1>Sojun Chandra</h1></em>
+<body style="background-color: white;">
+    <header style="background-color:#D8EFD3">
+        <em><h1 style="text-align: center; font-family:Pacifico;">Sojun Chandra</h1></em>
         <p>I am interested Full stack development. Now two remote internship are running on web-development. Besides a full stack web-development and SQA course are also running.</p>
     </header>
-    <main>
+    <main style="background-color:#95D2B3">
         <h3>Skills:</h3>
         <ul>
-            <li>JAVA</li>
-            <li>C++</li>
-            <li>HTML</li>
-            <li>CSS</li>
+            <li >JAVA <progress id="java" value="70" max="100"></progress></li>                
+            <li >C++ <progress id="C++" value="80" max="100"></progress></li>                
+            <li>HTML <progress id="HTML" value="75" max="100"></progress> </li>
+            <li>CSS <progress id="CSS" value="70" max="100"></li>
         </ul>
+        
         <h3>Technical Expertise:</h3>
         <ol>
             <li>Software Engineering</li>
@@ -32,6 +50,8 @@
                 <a href="https://github.com/sojun15/Daily-activity/blob/main/AgeCalculation.java"><li>Age Calculator</li></a>
                 <a href="https://github.com/sojun15/Micro_Processor_Project-"><li>Awareness of Orchid Cultivation</li></a>
             </ol>
+            <label for="Micro" style="color: orangered;">Video : Micro_Processor_Project:</label><br>
+            <video src="/micro project.mp4" height="300px" width="400px" controls></video>
         </section>
         <section>
             <table border="2" cellspacing="0">
@@ -43,9 +63,13 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Remote Intership</td>
+                        <td rowspan="2">Remote Intership</td>
                         <td>CodSoft</td>
                         <td>01 july - 01 june</td>
+                    </tr>
+                    <tr>
+                        <td>Encryptix</td>
+                        <td>11 july - 11 june</td>
                     </tr>
                     <tr>
                         <td>Khulna University</td>
@@ -57,27 +81,37 @@
                         <td>HSC</td>
                         <td>2018-2019</td>
                     </tr>
+                    <tr>
+                        <td colspan="3">Current running Course: Full Stack development & SQA</td>
+                    </tr>
                 </tbody>
             </table>
         </section>
         <section>
-            <form action="">
+            <form action="https://formspree.io/f/xayrgvag"
+            method="POST">
                 <h3>Contact:</h3>
                 <label for="name">Full Name:</label>
-                <input type="text" name="name" required><br><br>
+                <input type="text" name="name" placeholder="Full Name" required><br><br>
                 <label for="email">Email:</label>
-                <input type="email" name="email" required><br><br>
+                <input type="email" name="email" placeholder="Write Email" required><br><br>
                 <label for="subject">Subject:</label>
-                <input type="text" id="subject" required><br><br>
+                <input type="text" id="subject" placeholder="Write subject" required><br><br>
                 <label for="message">Message:</label><br>
-                <textarea name="message" id="message" rows="10" cols="20" required></textarea><br><br>
+                <textarea name="message" id="message" rows="10" cols="20" placeholder="Write short message" required></textarea><br><br>
                 <label for="button">Are you sure all data correct?</label>
                 <input type="submit">
             </form>
-        </section>
+        </section><br>
+        <section>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3092.832986463457!2d89.53617057893757!3d22.801760111391896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ff854ef424fd9f%3A0x6098ac75f2da064f!2sKhan%20Bahadur%20Ahasanullah%20Hall!5e0!3m2!1sen!2sbd!4v1717919188699!5m2!1sen!2sbd" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section><br>
     </main>
-    <footer>
-        <p>&copy;Don't copy my portfolio</p>
+
+    <footer style="background-color:#55AD9B">
+        <a href="https://www.facebook.com/profile.php?id=100007066908445"><i class="fa-brands fa-facebook" style="font-size: 40px;"></i></a>
+        <a href="https://www.linkedin.com/in/sojun-chandra-3b5677266?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin" style="font-size: 40px"></i></a>
+        <p style="color: red; text-align: center;">&copy;Don't copy my portfolio</p>
     </footer>
 </body>
 </html>

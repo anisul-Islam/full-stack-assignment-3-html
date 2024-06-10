@@ -45,5 +45,18 @@ Could you create a simple HTML portfolio page that showcases your skills and pro
 ### Submission
 Create a Pull-request. Rememeber to add your deployed website Link in README.md when making the PR.  
 
+### B. HTML Intermediate Part
+1. Add meta tags and use semantic tags everywhere
+2. Add social icons inside the footer: usefont-awesome icons
+3. Add Google font to your webpage
+4. Advanced Table: Use colspan, rowspan
+5. Advanced Form:
+Use advanced form elements for your webpage.
+send submitted form data to your email using formspree.io
+6. HTML Multimedia
+Add Google map in the contact section
+7. HTML5 features
+Add a progress bar, and meter to your webpage
+
 ### Add my deplyed link
 https://sojun15.github.io/full-stack-assignment-3-html/
