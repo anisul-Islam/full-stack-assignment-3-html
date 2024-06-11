@@ -3,9 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="full-stack-assignment">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<style>
+    body{
+        background-color: bisque;
+        font-family: "Roboto", sans-serif;
+    }
+</style>
 </head>
 <body>
+ <header>
     <nav>
         <ul>
             <li><a href="#intro" target="_blank" rel="noopener noreferrer">About Me</a></li>
@@ -15,39 +28,60 @@
             <li><a href="#contact" target="_blank" rel="noopener noreferrer">Contact</a></li>
         </ul>
     </nav>
-    <!--Introduction-->
-    <header id="intro">
+ </header>
+ <main>
+     <!--Introduction-->
+     <section id="intro">
         <h1>Sadman Sohan</h1>
         <p>An undergraduate student of <em><u>University Of Rajshahi</u></em>. My dept is <strong>ICE</strong><br>
             I am a complete beginner in this <strong>Web Development</strong> sector. I have a deep interest in this sector. I want to become a well-skilled <strong>Web Developer</strong>
         </p>
-    </header><hr>
+    </section><hr>
     <!--skills and expertise-->
     <section id="skills">
         <h2>Skills and Expertise</h2>
         <p>Here is some of my skills I achieved</p>
-        <ul>
-            <li>HTML
-                <ul>
-                    <li>Intermediate</li>
-                </ul>
-            </li>
-            <li>C
-                <ul>
-                    <li>Intermediate</li>
-                </ul>
-            </li>
-            <li>C++
-                <ul>
-                    <li>Intermediate</li>
-                </ul>
-            </li>
-            <li>PYTHON
-                <ul>
-                    <li>Beginner</li>
-                </ul>
-            </li>
-        </ul>
+         <table border="1" cellspacing="0" cellpadding="15">
+            <thead>
+                <tr>
+                    <th>Technology</th>
+                    <th>Efficiency</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td rowspan="3">Intermediate</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                </tr>
+                <tr>
+                    <td>C++</td>
+                </tr>
+                <tr>
+                    <td>PYTHON</td>
+                    <td>Beginner</td>
+                </tr>
+            </tbody>
+         </table>
+         <h2>Skills Progress</h2>
+         <div>
+            <label for="html">HTML : </label>
+            <progress id="html" max="100" value="85">85</progress>
+         </div>
+         <div>
+            <label for="c">C : </label>
+            <progress id="c" max="100" value="75">75</progress>
+         </div>
+         <div>
+            <label for="c++"> C++ : </label>
+            <progress id="c++" max="100" value="75"> 75</progress>
+         </div>
+         <div>
+            <label for="python">PYTHON : </label>
+            <progress id="python" max="100" value="55">55</progress>
+         </div>
         <p>Here is some steps I follow in a project lifecycle</p>
         <ol>
             <li>I analyze the requirements of the project</li>
@@ -103,7 +137,8 @@
     <section id="contact">
         <h2>Contact</h2>
         <p>Here is the process to contact with me</p>
-        <form action="">
+        <form   action="https://formspree.io/f/mgeggkev"
+        method="POST">
             <div>
                 <label for="name">Name : </label>
                 <input type="text" id="name" name="name" required>
@@ -114,7 +149,11 @@
             </div>
             <div>
                 <label for="subject">Subject : </label>
-                <input type="text" id="subject" name="subject">
+                <select name="subject" id="subject">
+                    <option value="inquiry">Inquiry</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="Job offer">Job Offer</option>
+                </select>
             </div>
             <div>
                 <label for="message">Messege : </label><br>
@@ -126,11 +165,21 @@
                 <input type="reset" value="Clear">
             </div>
         </form>
+        <h2>My Location </h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117311.30247308621!2d90.75431942516033!3d23.243880263509354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3754f3e23a497191%3A0x9b6fb54e20b3497b!2sHaziganj%20Upazila!5e0!3m2!1sen!2sbd!4v1718132983439!5m2!1sen!2sbd" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section><hr>
+ </main>
+
     <!--footer-->
     <footer>
         <p>Copyright reserved by &copy;<strong>Sadman Sohan</strong></p><br>
         <p>Developed with &hearts;</p>
+        <h2>Follow Me</h2>
+        <ul>
+            <li><i class="fa-brands fa-square-facebook"></i></li>
+            <li><i class="fa-brands fa-youtube"></i></li>
+            <li><i class="fa-brands fa-square-instagram"></i></li>
+        </ul>
     </footer>
 </body>
 </html>
