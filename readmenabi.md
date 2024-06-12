@@ -49,5 +49,5 @@
 - multimedia
 - html 5 elements.
 
-
+- Site has been deployed in Netlify : https://6669e6861f8d1b10e1468d65--html-intermediate.netlify.app/
 
