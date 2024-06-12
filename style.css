@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+  font-family:"Source Code Pro", monospace;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -48,17 +54,22 @@ form input,
 form textarea {
   padding: 10px;
   margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid gainsboro;
 }
 
 form button {
   padding: 10px 20px;
   margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: gainsboro;
 }
 
 /*****new css*****/
 .projects_grid {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 10px;
 }
 
@@ -98,19 +109,35 @@ nav {
   opacity: 0.2;
 }
 
+.contact_and_location {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+}
+.form_container,
+.map_container {
+  width: 100%;
+}
+iframe,
+form {
+  background-color: whitesmoke;
+  border-radius: 8px;
+  padding: 20px 25px;
+  overflow: hidden;
+}
 /**responsive css***/
 
-@media screen and (min-width: 900px) {
-  form {
-    width: 50%;
-  }
-  table {
-    width: 50%;
-    margin: 0px;
+@media screen and (max-width: 640px) {
+  .contact_and_location {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
   }
   .projects_grid {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 10px;
   }
 }
