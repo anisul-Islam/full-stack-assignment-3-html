@@ -11,9 +11,10 @@ const handleSubmit = (event) => {
     body: new URLSearchParams(formData).toString(),
   })
     .then(() => {
-        messageDiv.style.marginTop="15px";
+      messageDiv.style.marginTop = "15px";
       messageDiv.textContent = "Thank you for your submission";
       messageDiv.style.color = "green"; // Optionally, change the color to green
+      myForm.reset(); // Clear the form fields
     })
     .catch((error) => {
       messageDiv.textContent = `Submission failed: ${error}`;
@@ -21,4 +22,6 @@ const handleSubmit = (event) => {
     });
 };
 
-document.querySelector("form").addEventListener("submit", handleSubmit);
+document
+  .getElementById("contact-form")
+  .addEventListener("submit", handleSubmit);
