@@ -9,7 +9,7 @@
 
 ### How to do this assignment?
 
-- first fork, then clone to your local machine
+- first fork, then clone to your local machine.
 - start completing the requirements given below. 
 - Make sure to add the deployed project link to your README.md when making the last PR.
 
