@@ -1,0 +1,367 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
+* {
+  font-family: "Source Code Pro", monospace;
+} */
+.inverted {
+  box-shadow: 0 3px 5px 0.3px rgba(169, 162, 162, 0.2);
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(15px);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+header {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 10px;
+  background-color: white;
+}
+.logo_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  padding-inline: 25px;
+}
+.logo_container > span {
+  font-size: 18px;
+  font-weight: bold;
+}
+.logo_container > a > img {
+  width: 30px;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  padding-block: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  transition: 0.5s;
+  overflow-x: hidden;
+}
+nav > a {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+  display: block;
+  color: black;
+  font-size: 18px;
+  padding-block: 5px;
+}
+nav > a:hover {
+  background-color: gainsboro;
+}
+
+nav > .cv_btn {
+  margin-top: 20px;
+  padding-block: 10px;
+  padding-inline: 50px;
+  border-radius: 5px;
+  background-color: black;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+nav > .cv_btn:hover {
+  background-color: dodgerblue;
+}
+.closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+}
+.closebtn:hover {
+  color: red;
+}
+.menu_btn {
+  margin-inline: 24px;
+  border: none;
+  cursor: pointer;
+  font-size: large;
+  background-color: transparent;
+}
+nav > .separator {
+  display: none;
+}
+
+main {
+  padding: 20px;
+}
+#introduction {
+  width: 90%;
+  margin: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.my-photo {
+  width: fit-content;
+  margin-inline: auto;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background-color: gainsboro;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+.my-photo > img {
+  width: 150px;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  background-color: white;
+  border: 5px solid white;
+  border-radius: 5px;
+}
+
+.intro-icons {
+  display: flex;
+  gap: 20px;
+  font-size: 24px;
+  width: fit-content;
+}
+.intro-icons > a {
+  color: black;
+  text-decoration: none;
+}
+.intro-icons:hover > :not(:hover) {
+  opacity: 0.3;
+}
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid gainsboro;
+}
+
+form button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: gainsboro;
+}
+form button:hover {
+  background-color: lightgreen;
+}
+/*****new css*****/
+.projects_grid {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.projects_grid > div {
+  background: whitesmoke;
+  padding-block: 10px;
+  padding-inline: 20px;
+  border-radius: 5px;
+}
+
+.projects_grid > div > h3 {
+  margin: 10px;
+}
+.projects_grid img {
+  width: 100%;
+}
+.contact_and_location {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+.projects_grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form_container,
+.map_container {
+  width: 100%;
+}
+iframe,
+form {
+  background-color: whitesmoke;
+  border-radius: 8px;
+  padding: 20px 25px;
+  overflow: hidden;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+.social-links {
+  width: fit-content;
+  margin: auto;
+  padding-top: 10px;
+}
+.social-links:hover > :not(:hover) {
+  opacity: 0.4;
+}
+
+/**responsive css***/
+@media (min-width: 640px) {
+  #introduction {
+    /* display: grid;
+    grid-template-columns: auto auto; */
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 100px;
+  }
+  #introduction > .about-me {
+    width: 60%;
+  }
+  .about-me > h1 {
+    font-size: xx-large;
+    font-weight: bolder;
+  }
+  .my-photo {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-color: gainsboro;
+    border-radius: 8px;
+  }
+  .my-photo > img {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    border-radius: 8px;
+    background-color: white;
+    border: 5px solid white;
+  }
+  .contact_and_location,
+  .projects_grid {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .logo_container {
+    padding-inline: 50px;
+  }
+
+  nav {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    width: fit-content;
+    padding-inline: 50px;
+    gap: 30px;
+    background-color: transparent;
+    padding-block: 0;
+  }
+
+  nav > .separator {
+    display: inline;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: bold;
+    color: gainsboro;
+  }
+
+  nav > .closebtn,
+  .menu_btn {
+    display: none;
+  }
+
+  nav > a {
+    width: initial;
+    text-decoration: none;
+    display: inline;
+    color: black;
+    border-bottom: none;
+    font-size: medium;
+    padding-block: 0px;
+  }
+  nav > a {
+    color: black;
+    text-decoration: none;
+  }
+  nav > a:hover {
+    border-bottom: 2px solid black;
+    background-color: transparent;
+  }
+  nav > .cv_btn {
+    margin-top: 0;
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+  }
+  nav > a:nth-child(1) {
+    border-top: none;
+  }
+  .cv_btn:hover {
+    background-color: dodgerblue;
+  }
+
+  nav > a,
+  nav > .separator {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  nav {
+    padding-inline: 100px;
+  }
+}

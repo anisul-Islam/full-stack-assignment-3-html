@@ -26,3 +26,19 @@ const handleSubmit = (event) => {
 document
   .getElementById("contact-form")
   .addEventListener("submit", handleSubmit);
+
+//////////////////////
+var className = "inverted";
+var scrollTrigger = 400;
+
+window.onscroll = function () {
+  // We add pageYOffset for compatibility with IE.
+  if (window.scrollY >= scrollTrigger) {
+    document.getElementsByTagName("header")[0].classList.add(className);
+  } else {
+    document.getElementsByTagName("header")[0].classList.remove(className);
+  }
+};
+///////////////////
+
+
