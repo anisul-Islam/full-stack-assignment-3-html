@@ -12,7 +12,8 @@ const handleSubmit = (event) => {
   })
     .then(() => {
       messageDiv.style.marginTop = "15px";
-      messageDiv.textContent = "Thank you for your submission";
+      messageDiv.innerHTML =
+        "Feel free to contact me anytime. Thank you for your message.";
       messageDiv.style.color = "green"; // Optionally, change the color to green
       myForm.reset(); // Clear the form fields
     })
