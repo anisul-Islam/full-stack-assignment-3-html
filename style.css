@@ -65,7 +65,9 @@ form button {
   border: none;
   background-color: gainsboro;
 }
-
+form button:hover{
+  background-color: lightgreen;
+}
 /*****new css*****/
 .projects_grid {
   display: flex;
