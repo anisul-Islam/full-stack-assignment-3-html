@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
 
 * {
-  font-family:"Source Code Pro", monospace;
+  font-family: "Source Code Pro", monospace;
 }
 
 body {
@@ -65,7 +65,7 @@ form button {
   border: none;
   background-color: gainsboro;
 }
-form button:hover{
+form button:hover {
   background-color: lightgreen;
 }
 /*****new css*****/
@@ -127,6 +127,18 @@ form {
   border-radius: 8px;
   padding: 20px 25px;
   overflow: hidden;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+.social-links {
+  width: fit-content;
+  margin: auto;
+  padding-top: 10px;
+}
+.social-links:hover > :not(:hover) {
+  opacity: 0.4;
 }
 /**responsive css***/
 
