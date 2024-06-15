@@ -5,7 +5,7 @@
 ---
 # HTML Portfolio Assignment
 
-## A. HTML Basic Part
+## A. [HTML Basic Part](https://www.youtube.com/live/gqvrn5R8tzc?si=e8Z89nwwmEao0R-F)
 
 ### How to do this assignment?
 
@@ -52,7 +52,7 @@ Could you create a simple HTML portfolio page that showcases your skills and pro
 #### Submission
 Create a Pull-request. Remember to add your deployed website link to README.md when making the PR.  
 
-## B. HTML Intermediate Part
+## B. [HTML Intermediate Part](https://www.youtube.com/live/gsVT8_KXnxc?si=x2D06FVZyHBjTJRD)
 ### 1. **Add meta tags and use semantic tags everywhere**
 ### 2. **Add social icons inside the footer: usefont-awesome icons**
 ### 3. **Add Google font to your webpage**
@@ -64,5 +64,11 @@ Create a Pull-request. Remember to add your deployed website link to README.md w
 - Add Google map in the contact section
 ### 7. HTML5 features
 - Add a progress bar, and meter to your webpage
+#### Submission
+Create a Pull-request. Remember to add your deployed website link to README.md when making the PR.  
+
+
+## C. [HTML Advance Part](https://www.youtube.com/live/pJLz-YG3Vio?si=GbFo4G_p2PKHiz37)
+### 1. **Make sure your webpage is 100% accessible**
 #### Submission
 Create a Pull-request. Remember to add your deployed website link to README.md when making the PR.  
