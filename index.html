@@ -3,38 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="portfolio, html, mst.jannat">
+    <meta name="author" content="mst.jannat">  
+    <meta name="description" content="Mst. jannat is a Full-stack web developer">
     <title>Portfoliot</title>
-    
+    <!--font awesome cdn-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      body{
+        background-color: rgb(204, 239, 241);
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
 </head>
 <body> 
+<header>
   <nav>
-  <ul>
-    <li>
-      <a href="#Home" title="Visit About me">Home</a>
-    </li>
-    <li>
-      <a href="#Skills" title="Visit About Skills">Skills</a>
-    </li>
-    <li>
-      <a href="#Projects" title="Visit My Projects">Projects</a>
-    </li>
-    <li>
-      <a href="#Education" title="Visit My Education">Education</a>
-    </li>
-    <li>
-      <a href="#Contact" title="Visit Contact page">Contact</a>
-    </li>
-  </ul>
-  </nav>
+    <ul>
+      <li>
+        <a href="#Home" title="Visit About me">Home</a>
+      </li>
+      <li>
+        <a href="#Skills" title="Visit About Skills">Skills</a>
+      </li>
+      <li>
+        <a href="#Projects" title="Visit My Projects">Projects</a>
+      </li>
+      <li>
+        <a href="#Education" title="Visit My Education">Education</a>
+      </li>
+      <li>
+        <a href="#Contact" title="Visit Contact page">Contact</a>
+      </li>
+    </ul>
+    </nav>
+</header>
 
-    <!--Section: Header--> 
-<header id="Home">
+<main>
+      <!--Section: Header--> 
+<section id="Home">
   <h1>Mst. Jannat</h1>
   <p><em><strong>Full-stack Web developer</strong></em></p>
-  <img src="./Images/image.png" alt="Jannat" height="200"/>
+  <img src="./images/image.png" alt="Jannat" height="200"/>
   <hr/>
   <p>Hello, I'm <strong>Jannat</strong>, a Under-graduate from National University with a Degree in Banchelor of Social Science. A passion for Web Applications Development. Passionate about learning new technologies. My main purpose is skill development and main objective is to provide service to people.</p>
-</header>
+</section>
 
   <!--Section: Skills and Experience-->
 <section id="skills">
@@ -79,14 +96,13 @@
     Best Planning
   </li>
   <li>
-    Executing and complete tast
+    Executing and complete task
   </li>
   <li>
     Time management
   </li>
  </ol>
 </section>
-
 
 <section id="projects">
   <h2>Projects:</h2>
@@ -99,6 +115,10 @@
   </ol>
 </section>
 <hr/>
+
+
+
+
 <!--Section : Skills proficiency-->
 <section id="proficiency">
   <h2>Skills Proficiency:</h2>
@@ -131,8 +151,34 @@
     </tr>
   </tbody>
 </table>
+
+<div>
+  <h3>Skill progress:</h3>
+
+<div>
+<label for="htmlprogress">HTML:</label>
+<progress id="htmlprogress" value="90" max="100">90%</progress>
+</div>
+
+<div>
+<label for="cssprogress">CSS:</label>
+<progress id="cssprogress" value="85" max="100">95%</progress>
+</div>
+
+<div>
+<label for="jsprogress">JS:</label>
+<progress id="jsprogress" value="75" max="100">95%</progress>
+</div>
+</div>
+
+<div>
+  <h3>Experience Level</h3>
+  <label for="experienceLevel">Experience:</label>
+</div>
+<meter id="experienceLevel" min="0" max="10" value="5">5 years</meter>
+
 </section>
-<br/>
+
 
 <section id="Education">
   <h2>Education and Experience:</h2>
@@ -163,34 +209,87 @@
   </tbody>
 </table>
 </section>
+
   <!--Section: Contacts-->
   <section id="Contact">
     <h2>Contact Me:</h2>
-    <form>
+    <form action="https://formspree.io/f/mpzvvojd"
+    method="POST">
+
     <div>
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required/>
-    </div><br/>
+    </div>
+
       <div>
         <label for="email" required>Email:</label>
       <input type="text" id="Email" name="Email"/>
-      </div><br/>
+      </div>
+
+      
+      <div>
+        <label for="Age" required>Age:</label>
+      <input type="number" id="age" name="age" min="18" max="50" required/>
+      </div>
+
+      <div>
+        <label for="image">Upload Image:</label>
+        <input type="file" id="image" name="image">
+      </div>
+      <div>
+        <label for="Weibsite">Website:</label>
+        <input type="url" id="website" name="website"/>
+      </div>
+
+      <div>
+        <label for="subject">Subject:</label>
+        <select name="subject" id="subject">
+          <option value="inquiry">Inquiry</option>
+          <option value="Feedback">Feedback</option>
+          <option value="job">Job opportunity</option>
+        </select>
+      </div>
+
       <div>
         <label for="message">Message :</label>
         <textarea name="Message" id="message" Cols="20" rows="5"></textarea>
-      </div><br/>
+      </div>
+
+      
       <div>
         <button type="Submit">Submit</button>
-      <button type="Reset">Clear</button>
+        <button type="Reset">Clear</button>
+      </div>
+
     </form>
   </section>
-
-  <!--Section Footer-->
+</main>
+  <!--Footer-->
 <footer>
-  <p>Copyright reseved by &copy; Mst. Jannat</p>
-  <p>Developded with &hearts;</p>
+
+ <div>
+  <h3>Follow Me</h3>
+  <ul>
+    <li>
+      <a href="https://www.facebook.com/profile.php?id=100066754554743&mibextid=ZbWKwL" target="_blank">
+        <i class="fa-brands fa-facebook"></i>
+        Facebook Page
+      </a>
+    </li>
+  </ul>
+ </div>
+
+ <div>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d920795.5351922595!2d88.8429802!3d25.6428526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fcab08431748c5%3A0x8df9a73629fb8d7b!2sDinajpur%20District!5e0!3m2!1sen!2sbd!4v1718426791891!5m2!1sen!2sbd" title="Home map" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+ </div>
+
+ <ul>
   <a href="tel:01777777777">Call Me</a><br/>
   <a href="mailto:jannat017@gmail.com">Email Me</a>
+ </ul>
+
+  <p>Copyright reseved by &copy; Mst. Jannat</p>
+  <p>Developded with &hearts;</p>
 </footer>
 </body>
 </html>
