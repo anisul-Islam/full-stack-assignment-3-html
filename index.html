@@ -194,7 +194,7 @@
         <hr />
         <h2>Contact Form</h2>
         <hr />
-        <form>
+        <form action="https://formspree.io/f/mjvnnpal" method="POST">
           <div>
             <label for="name">Name :</label>
             <input id="name" type="text" name="name" required />
@@ -205,7 +205,27 @@
           </div>
           <div>
             <label for="subject">Subject :</label>
-            <input id="subject" type="text" name="subject" required />
+            <select name="subject" id="subject">
+              <option value="">Select option</option>
+              <option value="CSE">CSE</option>
+              <option value="EEE">EEE</option>
+              <option value="BBA">BBA</option>
+            </select>
+          </div>
+          <div>
+            <label for="subject">Gender :</label>
+            <input type="radio" name="gender" value="male" /> Male
+            <input type="radio" name="gender" value="female" /> Female
+            <input type="radio" name="gender" value="other" /> Other
+          </div>
+          <div>
+            <label for="image">Image :</label>
+            <input
+              type="file"
+              accept="image/*.png,.jpg"
+              name="image"
+              id="image"
+            />
           </div>
           <div>
             <label for="message">Message :</label>
