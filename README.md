@@ -1,6 +1,6 @@
 ## live link
 
- ➡️ [Visit](https://sakib797.github.io/full-stack-assignment-3-html/)
+ ➡️ [Visit](https://ihsakib.netlify.app/)
 
 ---
 # HTML Portfolio Assignment
