@@ -136,7 +136,9 @@ main {
 .about-me > .intro {
   font-size: 12px;
 }
-
+.location-availabe{
+  font-size: 10px;
+}
 .my-photo {
   width: fit-content;
   position: relative;
