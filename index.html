@@ -7,7 +7,7 @@
     <meta name="author" content="Abdullah">
     <meta name="keywords" content="Abdullah, portfolio, contact, education, experience, work">
     <meta name="description" content="A portfolio of Abdullah containing his educational background and work experience, Contact address is also attatched.">
-    <title>My Self-Introduction</title>
+    <title>My Introduction</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,20 +20,35 @@
             padding: 0;
             background-color: #0b0f41;
         }
+        nav {
+            background-color: #0609509d; /* Dark background color */
+            padding: 2px; /* Padding for top and bottom */
+        }
+        .nav-list {
+            list-style-type: none; /* Remove bullets */
+            display: flex; /* Display items in a row */
+            justify-content: right; /* Center the items */
+        }
+        .nav-item {
+            margin: 0 20 px; /* Margin between items */
+            color: rgb(248, 250, 248); /* White text color */
+            text-decoration: wavy; /* Remove underline */
+            font-size: 15px; /* Font size */
+        }
         .container {
             width: 80%;
             margin: 0 auto;
-            /* overflow: hidden;
+            overflow: hidden;
             padding: 20px;
             background: #d4d98c;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(138, 142, 38, 0.1); */
+            box-shadow: 0 0 10px rgba(138, 142, 38, 0.1);
             text-align: center;
         }
         .responsive-img {
             max-width: 100%;
+            min-width: 10%;
             height: auto;
-            border-radius: 50%;
         }
         header {
             text-align: center;
@@ -123,7 +138,6 @@
         td {
             background-color: rgb(196, 228, 12);
         }
-        /* Contact Form Styling */
         #contact {
             padding: 20px;
             background-color: #0f7d4d;
@@ -154,24 +168,6 @@
             border-radius: 5px;
             box-sizing: border-box;
         }
-
-        button[type="submit"] {
-            display: block;
-            width: 100%;
-            padding: 10px;
-            background-color: #333;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        button[type="submit"]:hover {
-            background-color: #82b00e;
-        }
-
-        /* Footer Styling */
         footer {
             background-color: #333;
             color: #fff;
@@ -218,6 +214,15 @@
 </head>
 
 <body>
+<div>
+    <nav class="nav-list">
+        <a href="#introduction" class="nav-item">Intro</a>
+        <a href="#skills" class="nav-item">Skills</a>
+        <a href="#projects" class="nav-item">Project</a>
+        <a href="#education" class="nav-item">Education</a>
+        <a href="#contact_form" class="nav-item">Contact Me</a>
+    </nav>    
+</div>
 
 <div class="container">
     <header>
@@ -232,7 +237,7 @@
         <p>Hi! My name is <b>Abdullah</b>. I am passionate about Software Engineering and my goal is to be a skilled Software Engineer.</p>
         <p>Now, I am a student of <b>Computer Science and Engineering</b> at <b>Mawlana Bhashani Science and Technology University</b>. I live in <b>Tangail</b> and my hometown is also here.</p>
         <p>I want to join a private software company. I am ambitious to make my career in a tech-giant company as a <b>Software Engineer</b> after completing my undegraduation study. I enjoy programming and creating new things.</p>
-        <p>I love learning. I constantly learn new things and righ now, I am learning <b>Web Development</b> under <b>Mr. Anisul Islam</b>. He is an excellent teacher and highly dedicated. he provides free computer education and this is a true blessing for the learners from Bangladesh. I am really thankful to him.</p>
+        <p>I love learning. I constantly learn new things and righ now, I am learning <b>Web Development</b> under <b>Mr. Anisul Islam</b>. He is an excellent teacher and highly dedicated. He provides free computer education and this is a true blessing for the learners from Bangladesh. I am really thankful to him.</p>
     </section>
 
     <section id="skills">
@@ -395,7 +400,7 @@
         </p>
     </section>
 
-    <section id="contact form">
+    <section id="contact_form">
         <h2>Contact Me</h2>
         <form action="https://formspree.io/f/xdoqqykw" method="POST">
             <div class="form-group">
