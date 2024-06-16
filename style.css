@@ -10,9 +10,6 @@ body {
   padding: 0;
   line-height: 1.6;
 }
-.about-me > .intro {
-  font-size: 10px;
-}
 
 header {
   position: fixed;
@@ -135,6 +132,9 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.about-me > .intro {
+  font-size: 12px;
 }
 
 .my-photo {
