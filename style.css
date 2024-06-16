@@ -10,6 +10,9 @@ body {
   padding: 0;
   line-height: 1.6;
 }
+.about-me > .intro {
+  font-size: 10px;
+}
 
 header {
   position: fixed;
@@ -137,15 +140,15 @@ main {
 .my-photo {
   width: fit-content;
   position: relative;
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   background-color: gainsboro;
   border-radius: 5px;
   margin-bottom: 1rem;
 }
 
 .my-photo > img {
-  width: 150px;
+  width: 100px;
   position: absolute;
   top: -20px;
   left: -20px;
@@ -251,14 +254,15 @@ form button:hover {
   width: 100%;
 }
 
-iframe,
 form {
   padding: 20px 25px;
   background-color: whitesmoke;
   border-radius: 8px;
   overflow: hidden;
 }
-
+iframe {
+  border-radius: 8px;
+}
 footer a {
   text-decoration: none;
   color: white;
@@ -296,7 +300,9 @@ footer a {
     font-size: xx-large;
     font-weight: bolder;
   }
-
+  .about-me > .intro {
+    font-size: inherit;
+  }
   .my-photo {
     position: relative;
     width: 250px;
