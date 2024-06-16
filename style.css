@@ -254,14 +254,14 @@ form button:hover {
   width: 100%;
 }
 
-form {
+form,.map_inframe_container {
   padding: 20px 25px;
   background-color: whitesmoke;
   border-radius: 8px;
   overflow: hidden;
 }
 iframe {
-  border-radius: 8px;
+  border-radius: 5px;
 }
 footer a {
   text-decoration: none;
