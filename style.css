@@ -305,6 +305,9 @@ footer a {
   .about-me > .intro {
     font-size: inherit;
   }
+  .location-availabe{
+  font-size: inherit;
+}
   .my-photo {
     position: relative;
     width: 250px;
