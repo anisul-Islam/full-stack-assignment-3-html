@@ -22,12 +22,18 @@
         }
         .container {
             width: 80%;
-            margin: auto;
-            overflow: hidden;
+            margin: 0 auto;
+            /* overflow: hidden;
             padding: 20px;
             background: #d4d98c;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 10px rgba(138, 142, 38, 0.1); */
+            text-align: center;
+        }
+        .responsive-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
         }
         header {
             text-align: center;
@@ -216,7 +222,7 @@
 <div class="container">
     <header>
         <h1>Welcome to My Portfolio</h1>
-        <img src="1718251260256.jpg" alt="Cover Photo" width="900" height="600">
+        <img src="1718251260256.jpg" alt="Cover Photo" width="900" height="600" class="responsive-img">
         <h2>Abdullah</h2>
         <img src="file.png" alt="Profile Picture" class="profile-pic" border-radius: 50%>
     </header>
@@ -389,7 +395,7 @@
         </p>
     </section>
 
-    <section id="contact">
+    <section id="contact form">
         <h2>Contact Me</h2>
         <form action="https://formspree.io/f/xdoqqykw" method="POST">
             <div class="form-group">
