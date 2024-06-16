@@ -20,33 +20,97 @@
       referrerpolicy="no-referrer"
     />
   </head>
+
   <body>
     <!-- header -->
-    <header>
-      <h1>Iftekhar Sakib</h1>
-      <p><strong>Welcome to my portfolio!</strong></p>
-    </header>
-    <!-- nav bar -->
-    <nav>
-      <div class="menu_wrapper">
-        <a href="index.html">Home</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#education-experience">Education</a>
-        <a href="#contact_and_location">Contact</a>
+    <header class="inverted">
+      <div class="logo_container">
+        <!-- <a href="new_ui.html"
+          ><img src="./img/IHSLogobyDesigner.png" alt=""
+        /></a> -->
+        <span>ihSakib</span>
       </div>
-    </nav>
+      <!-- nav bar -->
+      <nav id="navbar">
+        <a
+          onclick="document.querySelector('nav').style.width='0%'"
+          href="#about"
+          >About</a
+        >
+        <a
+          onclick="document.querySelector('nav').style.width='0%'"
+          href="#projects"
+          >Projects</a
+        >
+        <a
+          onclick="document.querySelector('nav').style.width='0%'"
+          href="#contact_and_location"
+          >Contact</a
+        >
+        <span class="separator">|</span>
+        <a href="./pdf/Iftekhar Hossain Resume.pdf" class="cv_btn" download
+          >Get my CV</a
+        >
+        <span
+          class="closebtn"
+          onclick="document.querySelector('nav').style.width='0%'"
+          >&times;</span
+        >
+      </nav>
+      <button
+        onclick="document.querySelector('nav').style.width='100%'"
+        class="menu_btn"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </header>
     <!-- main -->
     <main>
       <!-- intro -->
       <section id="introduction">
-        <h2>Introduction</h2>
-        <p>
-          Hello! I am Iftekhar Sakib, a passionate web development learner with
-          an interest in creating dynamic and responsive web applications. My
-          career goal is to become a lead developer and contribute to innovative
-          projects that make a difference.
-        </p>
+        <div>
+          <div class="my-photo">
+            <img src="./img/my-pic.jpg" alt="" />
+          </div>
+        </div>
+
+        <div id="about" class="about-me">
+          <h1>Hey🙋‍♂️, It`s Iftekhar</h1>
+          <p>
+            Hello, I'm Iftekhar Sakib, a Computer Science enthusiast. I'm
+            seeking mentorship from experienced professionals to navigate
+            software development and enhance my personal and professional
+            growth. Currently, I'm focusing on the MERN Stack, exploring
+            MongoDB, Express.js, React, and Node.js. If you have questions or
+            ideas, feel free to reach out. I'm always eager to exchange
+            knowledge and insights. Let's connect!
+          </p>
+          <p>
+            <i class="fa-solid fa-location-dot" style="color: orangered"></i>
+            &ThinSpace; Chandpur, Bangladesh <br />
+            <i
+              class="fa-regular fa-circle-dot fa-beat-fade"
+              style="color: #63e6be"
+            ></i>
+            &ThinSpace; Available for project
+          </p>
+          <p class="intro-icons">
+            <a href="https://github.com/SAKIB797"
+              ><i class="fa-brands fa-square-github"></i
+            ></a>
+
+            <a href="https://www.linkedin.com/in/ihSakib/"
+              ><i style="color: #0077b5" class="fa-brands fa-linkedin"></i
+            ></a>
+
+            <a href="https://wa.link/0m9vnu"
+              ><i
+                style="color: #25d366"
+                class="fa-brands fa-square-whatsapp"
+              ></i
+            ></a>
+          </p>
+        </div>
       </section>
       <!-- skills -->
       <section id="skills">
@@ -128,15 +192,6 @@
             <input type="email" id="email" name="email" required />
             <label for="subject">Subject:</label>
             <input type="text" id="subject" name="subject" required />
-
-            <!-- <label for="country">Country:</label>
-            <input list="countries" id="Country"/>
-            <datalist id="countries">
-              <option value="BD">
-              <option value="Japan">
-              <option value="USA">
-            </datalist> -->
-
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="4" required></textarea>
             <button type="submit">Submit</button>

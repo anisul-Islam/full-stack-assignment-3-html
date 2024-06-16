@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
 
 * {
   font-family: "Source Code Pro", monospace;
-}
+} */
 
 body {
   font-family: Arial, sans-serif;
@@ -12,33 +12,181 @@ body {
 }
 
 header {
-  background-color: #333;
-  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  backdrop-filter: blur(15px); /* Apply the backdrop-filter */
+  -webkit-backdrop-filter: blur(15px); /* For Safari support */
+  box-shadow: 0 0px 30px rgba(0, 0, 0, 0.1);
+
+  transition: background-color 0.3s;
+}
+
+.logo_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding-inline: 25px;
+}
+
+.logo_container > span {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.logo_container > a > img {
+  width: 2rem;
+  height: 2rem;
+}
+.logo_container > a {
+  display: flex;
+  align-items: center;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100vh;
+  overflow-x: hidden;
+  padding-block: 15rem;
+  background-color: rgb(255, 255, 255);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  transition: background-color 0.3s;
+}
+
+nav > a {
+  width: 100%;
   text-align: center;
-  overflow: hidden;
+  text-decoration: none;
+  display: block;
+  font-size: 18px;
+  color: black;
+  padding-block: 5px;
+}
+
+nav > a:hover {
+  background-color: gainsboro;
+}
+
+.closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+}
+
+.closebtn:hover {
+  color: red;
+}
+
+.menu_btn {
+  margin-inline: 24px;
+  font-size: large;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+nav > .separator {
+  display: none;
+}
+nav > .cv_btn {
+  width: 20%;
+  margin-top: 0;
+  background-color: black;
+  color: white;
+  padding: 5px 30px;
+  border-radius: 8px;
+  outline: none;
+  border-bottom: none;
+  cursor: pointer;
+}
+
+.cv_btn:hover {
+  background-color: dodgerblue;
+  border-bottom: none;
 }
 
 main {
   padding: 20px;
 }
 
+#introduction {
+  width: 90%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-photo {
+  width: fit-content;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background-color: gainsboro;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.my-photo > img {
+  width: 150px;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  background-color: white;
+  border: 5px solid white;
+  border-radius: 5px;
+}
+
+.intro-icons {
+  display: flex;
+  gap: 20px;
+  font-size: 24px;
+  width: fit-content;
+}
+
+.intro-icons > a {
+  color: black;
+  text-decoration: none;
+}
+
+.intro-icons:hover > :not(:hover) {
+  opacity: 0.3;
+}
+
 footer {
-  background-color: #333;
-  color: #fff;
+  background-color: #000000;
+  color: #ffffff;
   padding: 10px;
   text-align: center;
 }
 
 table {
-  border-collapse: collapse;
   width: 100%;
+  border-collapse: collapse;
   table-layout: fixed;
 }
 
 th,
 td {
-  border: 1px solid #ddd;
   padding: 8px;
+  border: 1px solid #ddd;
 }
 
 th {
@@ -65,93 +213,173 @@ form button {
   border: none;
   background-color: gainsboro;
 }
+
 form button:hover {
   background-color: lightgreen;
 }
-/*****new css*****/
+
 .projects_grid {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 10px;
 }
 
 .projects_grid > div {
-  background: whitesmoke;
   padding-block: 10px;
   padding-inline: 20px;
+  background: whitesmoke;
   border-radius: 5px;
 }
 
 .projects_grid > div > h3 {
   margin: 10px;
 }
+
 .projects_grid img {
   width: 100%;
-}
-header > h1 {
-  margin: 10px;
-  margin-bottom: 0;
-}
-header > p {
-  margin: 20px;
-  margin-top: 10px;
-}
-nav {
-  display: flex;
-  justify-content: center;
-}
-.menu_wrapper {
-  display: flex;
-  gap: 10px;
-}
-.menu_wrapper > a {
-  display: block;
-}
-.menu_wrapper:hover > :not(:hover) {
-  opacity: 0.2;
 }
 
 .contact_and_location {
   display: flex;
-  flex-direction: row;
-  gap: 20px;
+  flex-direction: column;
+  gap: 10px;
   justify-content: center;
 }
+
 .form_container,
 .map_container {
   width: 100%;
 }
+
 iframe,
 form {
+  padding: 20px 25px;
   background-color: whitesmoke;
   border-radius: 8px;
-  padding: 20px 25px;
   overflow: hidden;
 }
+
 footer a {
   text-decoration: none;
   color: white;
 }
+
 .social-links {
   width: fit-content;
   margin: auto;
   padding-top: 10px;
 }
+
 .social-links:hover > :not(:hover) {
   opacity: 0.4;
 }
-/**responsive css***/
 
-@media screen and (max-width: 640px) {
-  .contact_and_location {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    justify-content: center;
+@media (min-width: 800px) {
+  header {
+    padding-block: 15px;
   }
+  #introduction {
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 100px;
+  }
+
+  #introduction > .about-me {
+    width: 60%;
+  }
+
+  .about-me > h1 {
+    font-size: xx-large;
+    font-weight: bolder;
+  }
+
+  .my-photo {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-color: gainsboro;
+    border-radius: 8px;
+  }
+
+  .my-photo > img {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    border-radius: 8px;
+    background-color: white;
+    border: 5px solid white;
+  }
+
+  .contact_and_location,
   .projects_grid {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
+  }
+
+  .logo_container {
+    padding-inline: 50px;
+  }
+
+  nav {
+    width: inherit !important ;
+    height: fit-content;
+    position: static;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    width: fit-content;
+    padding-inline: 50px;
+    gap: 30px;
+    background-color: transparent;
+    padding-block: 0;
+  }
+
+  nav > .separator {
+    display: inline;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: bold;
+    color: gainsboro;
+  }
+
+  .closebtn {
+    display: none;
+  }
+  .menu_btn {
+    display: none;
+  }
+
+  nav > a {
+    width: initial;
+    text-decoration: none;
+    display: inline;
+    color: black;
+    font-size: medium;
+    padding-block: 0px;
+  }
+
+  nav > a:hover {
+    border-bottom: 2px solid black;
+    background-color: transparent;
+  }
+
+  nav > a,
+  nav > .separator {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  header {
+    padding-block: 18px;
+  }
+  nav {
+    padding-inline: 100px;
   }
 }
