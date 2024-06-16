@@ -39,7 +39,7 @@
       <hr />
       <div>
         <img src="./assets/parvez.jpg" alt="Profile Photo" height="380px" />
-        <h1>Hi! My name is Parvez.</h1>
+        <h1>Hi👋 My name is Parvez.</h1>
         <p>
           <b>Full Stack Developer</b> with a passion for Web Applications
           Development. Passionate about learning new technologies.
@@ -155,13 +155,13 @@
         <h2>Projects</h2>
         <hr />
         <div>
-          <h4>
+          <h3>
             <a
               target="_blank"
               href="https://github.com/parvez-prottoy/freshio-organic-shop"
               >Freshio Organic Shop
             </a>
-          </h4>
+          </h3>
           <h4>
             <a target="_blank" href="https://freshio-organic-shop.netlify.app/"
               >Visit
@@ -174,13 +174,13 @@
           </p>
         </div>
         <div>
-          <h4>
+          <h3>
             <a
               target="_blank"
               href="https://github.com/parvez-prottoy/growth-landing-page"
               >Growth Landing Page
             </a>
-          </h4>
+          </h3>
           <h4>
             <a target="_blank" href="https://growth-landing-page1.netlify.app/"
               >Visit
@@ -233,40 +233,49 @@
         <h2>Contact Form</h2>
         <hr />
         <form action="https://formspree.io/f/mjvnnpal" method="POST">
+          <fieldset>
+            <legend>Personal Information</legend>
+            <div>
+              <label title="name" for="name">Name :</label>
+              <input id="name" type="text" name="name" required />
+            </div>
+            <div>
+              <label title="email" for="email">Email :</label>
+              <input id="email" type="text" name="email" required />
+            </div>
+            <div>
+              <label title="age" for="age">Age :</label>
+              <input id="age" type="number" name="age" min="18" />
+            </div>
+            <div>
+              <label title="subject" for="subject">Subject :</label>
+              <select name="subject" id="subject">
+                <option value="">Select option</option>
+                <option value="CSE">CSE</option>
+                <option value="EEE">EEE</option>
+                <option value="BBA">BBA</option>
+              </select>
+            </div>
+            <div>
+              <label title="gender" for="gender">Gender :</label>
+              <input id="gender" type="radio" name="gender" value="male" /> Male
+              <input id="gender" type="radio" name="gender" value="female" />
+              Female
+              <input id="gender" type="radio" name="gender" value="other" />
+              Other
+            </div>
+            <div>
+              <label title="image" for="image">Image :</label>
+              <input
+                type="file"
+                accept="image/*.png,.jpg"
+                name="image"
+                id="image"
+              />
+            </div>
+          </fieldset>
           <div>
-            <label for="name">Name :</label>
-            <input id="name" type="text" name="name" required />
-          </div>
-          <div>
-            <label for="email">Email :</label>
-            <input id="email" type="text" name="email" required />
-          </div>
-          <div>
-            <label for="subject">Subject :</label>
-            <select name="subject" id="subject">
-              <option value="">Select option</option>
-              <option value="CSE">CSE</option>
-              <option value="EEE">EEE</option>
-              <option value="BBA">BBA</option>
-            </select>
-          </div>
-          <div>
-            <label for="subject">Gender :</label>
-            <input type="radio" name="gender" value="male" /> Male
-            <input type="radio" name="gender" value="female" /> Female
-            <input type="radio" name="gender" value="other" /> Other
-          </div>
-          <div>
-            <label for="image">Image :</label>
-            <input
-              type="file"
-              accept="image/*.png,.jpg"
-              name="image"
-              id="image"
-            />
-          </div>
-          <div>
-            <label for="message">Message :</label>
+            <label title="message" for="message">Message :</label> <br />
             <textarea
               name="message"
               id="message"
@@ -279,6 +288,7 @@
           <button type="reset">Clear</button>
         </form>
         <iframe
+          title="Map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.005108573759!2d90.7104550761889!3d23.92487318205432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37543177b6657c87%3A0xf2d38daf047ffe11!2skazi%20abul%20hasam%20market!5e0!3m2!1sbn!2sbd!4v1718433671439!5m2!1sbn!2sbd"
           width="600"
           height="450"
@@ -300,19 +310,24 @@
           <a
             href="https://www.facebook.com/profile.php?id=100091923693667"
             target="_blank"
-            ><i class="fa-brands fa-facebook"></i
+            aria-label="Visit to facebook"
+            ><i class="fa-brands fa-facebook" aria-hidden="true"></i
           ></a>
         </li>
         <li>
           <a
             href="https://www.linkedin.com/in/parvez-ahmed-prottoy-094048272"
             target="_blank"
-            ><i class="fa-brands fa-linkedin"></i
+            aria-label="Visit to linkedin"
+            ><i class="fa-brands fa-linkedin" aria-hidden="true"></i
           ></a>
         </li>
         <li>
-          <a href="https://github.com/parvez-prottoy" target="_blank"
-            ><i class="fa-brands fa-github"></i
+          <a
+            href="https://github.com/parvez-prottoy"
+            target="_blank"
+            aria-label="Visit to github"
+            ><i class="fa-brands fa-github" aria-hidden="true"></i
           ></a>
         </li>
       </ul>
