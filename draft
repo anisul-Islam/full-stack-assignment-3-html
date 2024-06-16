@@ -1,0 +1,54 @@
+        <form action="" method="POST">
+          <div>
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div>
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div>
+            <label for="age">Age : </label>
+            <input
+              type="number"
+              id="age"
+              name="age"
+              min="18"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="website"> Website: </label>
+            <input
+              type="url"
+              id="website"
+              name="website"
+              pattern="https?://.+"
+            />
+          </div>
+
+          <div>
+            <label for="subject">Subject: </label>
+            <select name="subject" id="subject">
+              <option value="inquiry">Inquiry</option>
+              <option value="feedback">Feedback</option>
+              <option value="job">Other</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="message">Meassage : </label>
+            <textarea
+              name="message"
+              id="message"
+              cols="20"
+              rows="10"
+            ></textarea>
+          </div>
+
+          <button type="submit">Submit</button>
+          <button type="reset">Clear</button>
+        </form>
