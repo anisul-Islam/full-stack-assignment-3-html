@@ -139,6 +139,8 @@
         <p>Here is the process to contact with me</p>
         <form   action="https://formspree.io/f/mgeggkev"
         method="POST">
+        <fieldset>
+            <legend>Personal Info</legend>
             <div>
                 <label for="name">Name : </label>
                 <input type="text" id="name" name="name" required>
@@ -148,12 +150,43 @@
                 <input type="email" id="email" name="email" required>
             </div>
             <div>
+                <label for="age">Age : </label>
+                <input type="number" min="18" max="40">
+            </div>
+            <div>
+                <label for="experience">Experience : </label>
+                <input type="range" max="10" min="0">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Personal Choice</legend>
+            <div>
+                <label for="color">Favourite Color : </label>
+                <input type="color" id="color" name="color">
+            </div>
+            <div>
+                <label for="programming">Favourite Programming Language :  </label>
+                <input list="lang"  id="programming" name="programming">
+                <datalist id="lang">
+                    <option value="C">C</option>
+                    <option value="C++">C++</option>
+                    <option value="Python">Python</option>
+                    <option value="Java">Java</option>
+                    <option value="JS">JS</option>
+                </datalist>
+            </div>
+
+        </fieldset>
+        <fieldset>
+            <legend>Others and Submission</legend>
+            <div>
                 <label for="subject">Subject : </label>
-                <select name="subject" id="subject">
-                    <option value="inquiry">Inquiry</option>
-                    <option value="feedback">Feedback</option>
-                    <option value="Job offer">Job Offer</option>
-                </select>
+                <input list="sub" id="subject" name="subject">
+                <datalist id="sub">
+                    <option value="Inquery">Inquery</option>
+                    <option value="Feedback">Feedback</option>
+                    <option value="Job">Job</option>
+                </datalist>
             </div>
             <div>
                 <label for="message">Messege : </label><br>
@@ -164,6 +197,8 @@
                 <input type="submit" value="Submit">
                 <input type="reset" value="Clear">
             </div>
+        </fieldset>
+
         </form>
         <h2>My Location </h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117311.30247308621!2d90.75431942516033!3d23.243880263509354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3754f3e23a497191%3A0x9b6fb54e20b3497b!2sHaziganj%20Upazila!5e0!3m2!1sen!2sbd!4v1718132983439!5m2!1sen!2sbd" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
