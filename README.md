@@ -1,3 +1,6 @@
+## Live link 
+- https://sakib797.github.io/full-stack-assignment-3-html/
+
 # HTML Portfolio Assignment
 
 ## A. [HTML Basic Part](https://www.youtube.com/live/gqvrn5R8tzc?si=e8Z89nwwmEao0R-F)
