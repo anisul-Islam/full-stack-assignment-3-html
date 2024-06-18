@@ -1,10 +1,15 @@
+## live link
+
+ ➡️ [Visit](https://ihsakib.netlify.app/)
+
+---
 # HTML Portfolio Assignment
 
 ## A. [HTML Basic Part](https://www.youtube.com/live/gqvrn5R8tzc?si=e8Z89nwwmEao0R-F)
 
 ### How to do this assignment?
 
-- first fork, then clone to your local machine
+- first fork, then clone to your local machine.
 - start completing the requirements given below. 
 - Make sure to add the deployed project link to your README.md when making the last PR.
 

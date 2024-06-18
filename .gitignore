@@ -1,0 +1,101 @@
+# Ignore macOS system files
+.DS_Store
+
+# Ignore Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Ignore node_modules directory for Node.js projects
+node_modules/
+
+# Ignore build output directories (for example, in many JavaScript frameworks)
+dist/
+build/
+
+# Ignore logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore environment variable files
+.env
+.env.local
+.env.*.local
+
+# Ignore editor directories and files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore Python virtual environment directories
+venv/
+env/
+
+# Ignore temporary files created by editors or OS
+*.swp
+*.swo
+*.tmp
+
+# Ignore Python bytecode files
+__pycache__/
+*.py[cod]
+
+# Ignore Java build output directories
+target/
+bin/
+
+# Ignore compiled files
+*.o
+*.out
+*.class
+*.dll
+*.exe
+*.so
+
+# Ignore other specific files
+*.local
+.history
+*.sass-cache/
+*.vscode-test/
+
+# Ignore debugging and testing outputs
+coverage/
+*.cover
+*.coverage
+*.testresult
+*.spec.ts
+
+# Ignore specific programming languages outputs
+*.rbc
+*.class
+*.hi
+*.o
+*.a
+*.dyn_hi
+*.dyn_o
+*.glob
+*.lib
+
+# Ignore system-specific files
+*.stackdump
+*.pid
+*.seed
+*.pid.lock
+
+# Ignore npm-related directories and files
+package-lock.json
+npm-debug.log
+yarn-error.log
+
+# Ignore IDE specific settings
+.vscode/
+*.code-workspace
+
+# Ignore lock files (if applicable)
+pnpm-lock.yaml
+shrinkwrap.yaml
+yarn.lock

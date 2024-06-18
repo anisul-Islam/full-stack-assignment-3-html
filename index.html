@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Iftekhar`s Portfolio" />
+    <meta
+      property="og:image"
+      content="https://i.ibb.co/cLVWCXL/IMG20231214160940-1.jpg"
+    />
+    <meta name="author" content="Iftekhar Sakib" />
+    <meta name="keywords" content="portfolio,sakib797,Iftekhar Sakib" />
+    <title>Iftekhar`s Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <!-- header -->
+    <header>
+      <div class="logo_container">
+        <!-- <a href="new_ui.html"
+          ><img src="./img/IHSLogobyDesigner.png" alt=""
+        /></a> -->
+        <span>ihSakib</span>
+      </div>
+      <!-- nav bar - md , visible by clicking menu btn-->
+      <nav id="nav-md" class="nav-md">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact_and_location">Contact</a>
+        <a href="./pdf/Iftekhar Hossain Resume.pdf" class="cv-btn" download
+          >Download Résumé</a
+        >
+        <span
+          class="closebtn"
+          onclick="document.querySelector('nav').style.width='0%'"
+          >&times;</span
+        >
+      </nav>
+      <!-- menu button on md screen, hided on lg screen  -->
+      <button
+        class="menu-btn"
+        onclick="document.getElementById('nav-md').style.width='70%'"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <!-- nav bar - lg -->
+      <nav class="nav-lg">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact_and_location">Contact</a>
+        <a href="./pdf/Iftekhar Hossain Resume.pdf" class="cv-btn" download
+          >Download Résumé</a
+        >
+      </nav>
+    </header>
+    <!-- main -->
+    <main>
+      <!-- intro -->
+      <section id="introduction">
+        <div>
+          <div class="my-photo">
+            <img src="./img/my-pic.jpg" alt="" />
+          </div>
+        </div>
+
+        <div id="about" class="about-me">
+          <h1>Hey 🙋‍♂️, It`s Iftekhar</h1>
+          <p>
+            Hello, I'm Iftekhar Sakib, a Computer Science enthusiast. I'm
+            seeking mentorship from experienced professionals to navigate
+            software development and enhance my personal and professional
+            growth. Currently, I'm focusing on the MERN Stack, exploring
+            MongoDB, Express.js, React, and Node.js. If you have questions or
+            ideas, feel free to reach out. I'm always eager to exchange
+            knowledge and insights. Let's connect!
+          </p>
+          <p>
+            <i class="fa-solid fa-location-dot" style="color: orangered"></i>
+            &ThinSpace; Chandpur, Bangladesh <br />
+            <i
+              class="fa-regular fa-circle-dot fa-beat-fade"
+              style="color: #63e6be"
+            ></i>
+            &ThinSpace; Available for project
+          </p>
+          <p class="intro-icons">
+            <a href="https://github.com/SAKIB797"
+              ><i style="color: black" class="fa-brands fa-square-github"></i
+            ></a>
+
+            <a href="https://www.linkedin.com/in/ihSakib/"
+              ><i style="color: #0077b5" class="fa-brands fa-linkedin"></i
+            ></a>
+
+            <a href="https://wa.link/0m9vnu"
+              ><i
+                style="color: #25d366"
+                class="fa-brands fa-square-whatsapp"
+              ></i
+            ></a>
+          </p>
+        </div>
+      </section>
+      <!-- skills -->
+      <section id="skills">
+        <h2>Skills and Expertise</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>git (intermediate)</li>
+          <li>C (intermediate)</li>
+          <li>CPP (beginner)</li>
+          <li>Java (intermediate)</li>
+        </ul>
+      </section>
+      <!-- projects -->
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects_grid">
+          <div>
+            <h3>GST Demo</h3>
+            <img src="./img/project-1.png" alt="Project 1" />
+            <br />
+            <a href="https://sakib797.github.io/GST-DEMO/">Visit</a>
+          </div>
+          <div>
+            <h3>CSTU CSE-02</h3>
+            <img src="./img/project-2.png" alt="Project 2" />
+            <br />
+            <a href="https://sakib797.github.io/CSTU-CSE/">Visit</a>
+          </div>
+          <div>
+            <h3>iceCream Shop</h3>
+            <img src="./img/project-3.png" alt="Project 3" />
+            <br />
+            <a href="https://sakib797.github.io/iceCream-shop-website/"
+              >Visit</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- education -->
+      <section id="education-experience">
+        <h2>Education and Experience</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Institution</th>
+              <th>Degree</th>
+              <th>Duration</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Chandpur Science and Technology University</td>
+              <td>Computer Science & Engineering</td>
+              <td>2023-present</td>
+            </tr>
+            <tr>
+              <td>Higher Secondary</td>
+              <td>Science</td>
+              <td>2019-2021</td>
+            </tr>
+            <tr>
+              <td>Secondary</td>
+              <td>Science</td>
+              <td>2014-2019</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!-- contact me and map -->
+      <section id="contact_and_location" class="contact_and_location">
+        <!-- contact form -->
+        <div class="form_container">
+          <h2>Contact Me</h2>
+          <form id="contact-form" name="contact" netlify>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required />
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="2" required></textarea>
+            <button type="submit">Submit</button>
+            <div id="submissionMessage"></div>
+          </form>
+        </div>
+        <!-- map -->
+        <div class="map_container">
+          <h2>Location</h2>
+          <div class="map_inframe_container" id="map_inframe_container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7328.03784628291!2d90.96757850000003!3d23.3150722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37548b9702db0349%3A0x860856d7a12663d9!2sNurpur%20Korban%20Ali%20Chairman%20Bari!5e0!3m2!1sen!2sbd!4v1718210271049!5m2!1sen!2sbd"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Location"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer>
+      <div class="social-links">
+        <a href="https://www.facebook.com/SAKIB797"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        .
+        <a href="https://github.com/SAKIB797"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        .
+        <a href="https://www.linkedin.com/in/ihSakib/"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
+      <p>&copy; 2024 Iftekhar Sakib. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
