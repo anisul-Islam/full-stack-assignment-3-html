@@ -9,6 +9,10 @@
       content="https://i.ibb.co/cLVWCXL/IMG20231214160940-1.jpg"
     />
     <meta name="author" content="Iftekhar Sakib" />
+    <meta
+      name="description"
+      content="It a personal portfolio of Iftekhar Sakib who is a Computer Science student from Bangladesh"
+    />
     <meta name="keywords" content="portfolio,sakib797,Iftekhar Sakib" />
     <title>Iftekhar`s Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -32,7 +36,7 @@
         <span>ihSakib</span>
       </div>
       <!-- nav bar - md , visible by clicking menu btn-->
-      <nav id="nav-md" class="nav-md">
+      <nav id="nav-md" class="nav-md" aria-label="navbar">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#contact_and_location">Contact</a>
@@ -48,6 +52,7 @@
       <!-- menu button on md screen, hided on lg screen  -->
       <button
         class="menu-btn"
+        aria-label="menu button"
         onclick="document.getElementById('nav-md').style.width='70%'"
       >
         <i class="fa-solid fa-bars"></i>
@@ -99,15 +104,17 @@
             &ThinSpace; Available for project
           </p>
           <p class="intro-icons">
-            <a href="https://github.com/SAKIB797"
+            <a href="https://github.com/SAKIB797" aria-label="github profile"
               ><i style="color: black" class="fa-brands fa-square-github"></i
             ></a>
 
-            <a href="https://www.linkedin.com/in/ihSakib/"
+            <a
+              href="https://www.linkedin.com/in/ihSakib/"
+              aria-label="linkedin profile"
               ><i style="color: #0077b5" class="fa-brands fa-linkedin"></i
             ></a>
 
-            <a href="https://wa.link/0m9vnu"
+            <a href="https://wa.link/0m9vnu" aria-label="whatsapp chat"
               ><i
                 style="color: #25d366"
                 class="fa-brands fa-square-whatsapp"
@@ -302,15 +309,19 @@
     <!-- footer -->
     <footer class="py-5">
       <div class="social-links">
-        <a href="https://www.facebook.com/SAKIB797"
+        <a
+          href="https://www.facebook.com/SAKIB797"
+          aria-label="facebook profile"
           ><i class="fa-brands fa-facebook"></i
         ></a>
         .
-        <a href="https://github.com/SAKIB797"
+        <a href="https://github.com/SAKIB797" aria-label="github profile"
           ><i class="fa-brands fa-github"></i
         ></a>
         .
-        <a href="https://www.linkedin.com/in/ihSakib/"
+        <a
+          href="https://www.linkedin.com/in/ihSakib/"
+          aria-label="linkedin profile"
           ><i class="fa-brands fa-linkedin"></i
         ></a>
       </div>
