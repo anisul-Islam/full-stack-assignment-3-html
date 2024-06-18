@@ -28,18 +28,11 @@ document
   .getElementById("contact-form")
   .addEventListener("submit", handleSubmit);
 
-
-/* for backdrop filter */
-// var className = "inverted";
-// var scrollTrigger = 400;
-
-// window.onscroll = function () {
-//   // We add pageYOffset for compatibility with IE.
-//   if (window.scrollY >= scrollTrigger) {
-//     document.getElementsByTagName("header")[0].classList.add(className);
-//   } else {
-//     document.getElementsByTagName("header")[0].classList.remove(className);
-//   }
-// };
+window.onload = function () {
+  let a = document.getElementById("contact-form");
+  let b = document.getElementById("map_inframe_container");
+  let h = window.getComputedStyle(a).height;
+  b.style.height = h;
+};
 
 
