@@ -1,0 +1,134 @@
+body{
+    margin: 0;
+    background-color: white;
+    font-family: "Roboto", sans-serif;;
+}
+nav ul{
+    list-style-type: none;
+    background-color: black;
+    overflow: hidden;
+    padding: 0%;
+    margin: 0%;
+}
+nav li{
+    float: left;
+}
+nav a{
+    color: white;
+    font-size: 1.5em;
+    padding: 10px 25px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+    
+}
+
+nav a:hover{
+    background-color: hsl(0, 0%, 82%);
+    color: black;   
+}
+
+header{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+}
+header a{
+    text-decoration: none;
+    color: black;
+    
+}
+header a:hover{
+    font-size: 25px;
+}
+.nav-section hr{
+    border: 2px solid rgb(13, 14, 13);
+    border-radius: 5px;
+    width: 80%;
+}
+main{
+    padding: 30px 70px;
+    width: 600px;
+}
+main h3{
+    padding: 20px;
+}
+th{
+    background-color: rgb(178, 187, 183);
+    color: rgb(0, 0, 0);
+}#intro{
+    font-size: 20px;
+    padding-bottom: 200px;
+}
+#skills{
+    font-size: 20px;
+    padding-bottom: 200px; 
+}
+#projects{
+    font-size: 20px;
+    padding-bottom: 200px; 
+}
+#projects li {
+    padding-bottom: 60px;
+}
+#projects img{
+    margin: 10px;
+}
+#projects a{
+    background-color: black;
+    color: aliceblue;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: .3s;
+}
+#projects a:hover{
+    background-color: rgb(85, 85, 85);
+}
+#edu{
+    font-size: 20px;
+    padding-bottom: 200px;
+}
+#contact{
+    font-size: 20px;
+    padding-bottom: 200px;
+}
+form{
+    margin: 10px;
+    font-size: 30px;
+}
+form label{
+    padding: 20px 70px;
+    display: inline-block;
+    
+}
+form input{
+    align-items: center;
+    font-size: 20px;
+}
+textarea{
+    padding-top: 30px;
+}
+.button{
+    float: right;
+    height: 40px;
+    width: 70px;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+.button:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+.footer{
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 5px;
+}
