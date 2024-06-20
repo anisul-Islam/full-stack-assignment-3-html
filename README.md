@@ -61,3 +61,9 @@ Create a Pull-request. Remember to add your deployed website link to README.md w
 - Add a progress bar, and meter to your webpage
 #### Submission
 Create a Pull-request. Remember to add your deployed website link to README.md when making the PR.  
+
+## C. [HTML Advance Part](https://www.youtube.com/live/pJLz-YG3Vio?si=GbFo4G_p2PKHiz37)
+### 1. **Make sure your webpage is 100% accessible**
+#### Submission
+Create a Pull-request. Remember to add your deployed website link to README.md when making the PR.  
+
