@@ -44,10 +44,17 @@
     </header>
     <main>
         <section id="intro">
-            <h1>Muhammad Golamun Nabi Noyon</h1>
+            <h1>♨ Muhammad Golamun Nabi Noyon ♨</h1>
             <p>Merchandiser, Multitex Sourcing Ltd.</p>
             <hr/>
         </section>
+
+        <template>
+            <div class="user-card">
+                <h2 class="user-name"></h2>
+                <h2 class="user-email"></h2>
+            </div>
+        </template>
         
        
         <section id="aboutme">
@@ -112,7 +119,7 @@
             
            <!-- Defination list List -->
               <dl>
-                <dct>HTML :</dct>
+                <dt>HTML :</dt>
                 <dd>HTML is very useful mark up language. To buil a website we must use this language.</dd>
     
               </dl>
@@ -126,14 +133,42 @@
     
         <form action="https://formspree.io/f/xoqggqne"
         method="POST">
+        <fieldset>
+            <legend>Personal Information :</legend>
+            <div>
+                <label for="fname">fName : </label>
+             <input type="text" id="fname" name="fname" autocomplete="given-name" required>
+             <label for="lname">lName : </label>
+             <input type="text" id="lname" name="lname" autocomplete="family-name" required>
+             </div>
+        
+             <div>
+                <label for="email">Email : </label>
+             <input type="email" id="email" name="email" autocomplete="off" required>
+             </div>
+             <div>
+                <label for="age">Age : </label>
+             <input type="number" id="age" name="age" min="18" max="45" autocomplete="bday-month" required>
+             </div>
+        </fieldset>
          <div>
-            <label for="name">Name : </label>
-         <input type="text" id="name" name="name" required>
+            <label for="favcolor">Favorite Color : </label>
+         <input type="color" id="favcolor" name="favcolor" value="#fff000" autocomplete="name" required>
          </div>
-    
          <div>
-            <label for="email">Email : </label>
-         <input type="email" id="email" name="email" required>
+            <label for="experience">Total Learning of web development : </label>
+         <input type="range" id="experience" name="experience" min="0" max="10">
+         </div>
+         <div>
+            <label for="programming">Your favorite language : </label>
+            <input list="language" id="programming" name="programming">
+            <datalist id="language">
+            <option value="C">
+            <option value="C++">
+            <option value="Python">
+            <option value="JavaScript">
+            
+            </datalist>
          </div>
          <div>
             <label for="subject">Subject :</label>
@@ -152,10 +187,14 @@
          </div>
     
          <div>
-            <button type="submit">Submit</button>
+            <label for="submit_button">
+            <button id="submit_button" type="submit">Submit</button>
+            </label>
         </div>
          <div>
-            <button type="reset">Clear</button>
+            <label for="reset_button">
+            <button id="reset_button" type="reset">Clear</button>
+            </label>
          </div>
     
         </form>
@@ -176,8 +215,6 @@
         <br> <br> <br>
         <video height="300" width="500"  controls>
             <source  src="./assets/video/Video-1.mp4" type="video/m4">
-
-            Your browser does not support thsi video.
         </video>
 
     </section>
@@ -199,26 +236,28 @@
         </ul>
     </div>
     <div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58373.85998898619!2d90.33708824229063!3d23.876628117370363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c5d05e7074dd%3A0xd1c58803049f00c7!2sUttara%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1718064398740!5m2!1sen!2sbd" width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="My Residense"></iframe>
+        <label for="googlemap"></label>
+        <iframe id="googlemap" title="My Residense" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58373.85998898619!2d90.33708824229063!3d23.876628117370363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c5d05e7074dd%3A0xd1c58803049f00c7!2sUttara%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1718064398740!5m2!1sen!2sbd" width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
     </div>
    <div id="my-sites">
     <h2>My site 01:</h2>
-    <div>
+    
         <ul>
             <li><a href="https://noyonnabi.github.io/mark-fashion/">Site 01</a></li>
         </ul>
-    </div>
-    <iframe src="https://noyonnabi.github.io/mark-fashion/" frameborder="0"></iframe> <br><br>
+    
+    <label for="site-01"></label>
+    <iframe title="My Site-01" id="site-01" src="https://noyonnabi.github.io/mark-fashion/" frameborder="0"></iframe> <br><br>
 
     <h2>My Site 02:</h2>
      
-     <div>
+     
         <ul>
             <li><a href="https://ecommerce-site-by-noyon.netlify.app/">Site 02</a></li>
          </ul>
-     </div>
-
-    <iframe src="https://ecommerce-site-by-noyon.netlify.app/" frameborder="0"></iframe>
+     
+     <label for="site-02"></label>
+    <iframe title="My Site-02" id="site-02" src="https://ecommerce-site-by-noyon.netlify.app/" frameborder="0"></iframe>
    </div>
     <!--footer-->
     <br><br><br>

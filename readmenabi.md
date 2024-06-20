@@ -51,3 +51,20 @@
 
 - Site has been deployed in Netlify : https://6669e6861f8d1b10e1468d65--html-intermediate.netlify.app/
 
+# Advance HTML
+
+- more advance form - input type="color/range", datalist, fieldset, legend. 
+- web accessibility
+   - use semantic tag
+   - use lang attribute in html tag. 
+   - use heading tag in order (h1--> h2--> h3-->)
+   - use alt attribute in img tag always. 
+   - contrast ration
+   - use more meaningful text in link. 
+   - always maintain label(for) = input(id)
+   - use meta tags : desc, keyword etc. 
+- HTML5 API
+- HTML Templates and web component.
+- Source for symbols, colors, emojis, icons.
+- Learning resources. 
+
