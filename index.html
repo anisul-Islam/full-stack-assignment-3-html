@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="portfolio, zubaer rahman jisan, html">
+    <meta name="description" content="Personal portfolio website">
+    <title>My Portfolio</title>
+    <!--Font-awesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!--Google-font link-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header, footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        main {
+            padding: 2em;
+        }
+        .intro {
+            margin-bottom: 2em;
+        }
+        .skills, .projects, .education, .contact {
+            margin-bottom: 3em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 2em;
+        }
+        table, th, td {
+            border: 1px solid #333;
+        }
+        th, td {
+            padding: 0.5em;
+            text-align: left;
+        }
+        th {
+            background: #f4f4f4;
+        }
+        form label {
+            display: block;
+            margin: 0.5em 0 0.2em;
+        }
+        form input, form textarea {
+            padding: 0.5em;
+            margin-bottom: 1em;
+        }
+        form input[type="submit"] {
+            background: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            padding: 1em;
+        }
+        .social-icons a {
+            color: #fff;
+            margin: 0 0.5em;
+            text-decoration: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Zubaer Rahman Jisan</h1>
+        <p>Hello! welcome to my portfolio website!</p>
+    </header>
+
+    <nav class="nav-bar">
+        <a href="#intro">Introduction</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+        <a href="#extras">Extras</a>
+    </nav>
+
+    <main>
+        <section class="intro" id="intro">
+            <h2>About me</h2>
+            <p><strong>Who am I?</strong> I am a passionate web developer with a love for creating dynamic and responsive websites. My interests include <em>coding</em>, <em>design</em>, and <em>technology</em>. My career goal is to become a full-stack developer and contribute to innovative projects.</p>
+        </section>
+
+        <section class="skills" id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>MS Office</li>
+            </ul>
+            <ol>
+                <li>Analysis</li>
+                <li>Design</li>
+                <li>Development</li>
+                <li>Testing</li>
+                <li>Deployment</li>
+            </ol>
+        </section>
+
+        <section class="projects" id="projects">
+            <h2>Projects</h2>
+            <div>
+                <a href="https://github.com/murshed61/Online_shop_project_final/blob/main/main2.c">Data Structure Project</a>
+                <p>This project was done by my team 'Team Catalyst', an online shopping platform</p>
+                <img src="project1.jpg" alt="Screenshot of Project 1">
+            </div>
+        </section>
+
+        <section class="education" id="education">
+            <h2>Education and Experience</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Institution/Company</th>
+                        <th>Degree/Position</th>
+                        <th>Duration</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Daffodil International University</td>
+                        <td>Bachelor of Science in Computer Science and Engineering</td>
+                        <td>2023 - Present</td>
+                    </tr>
+                    <tr>
+                        <td>Dhaka College</td>
+                        <td>HSC in Science</td>
+                        <td>2018 - 2019</td>
+                    </tr>
+                    <tr>
+                        <td>Onudhavon Academic Coaching</td>
+                        <td>Physcis Mentor</td>
+                        <td>2022 July - 2022 October</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>Contact Form</h2>
+            <form action="https://formspree.io/f/mjkbbyov" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <input type="submit" value="Send">
+            </form>
+        </section>
+
+        <section class="extras" id="extras">
+            <h2>Additional Features</h2>
+            <div class="progress-bar">
+                <label for="progress">Progress:</label>
+                <progress id="progress" value="70" max="100">70%</progress>
+            </div>
+            <div class="meter">
+                <label for="meter">Meter:</label>
+                <meter id="meter" value="0.7">70%</meter>
+            </div>
+            <div class="map">
+                <h2>Location</h2>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.669059980715!2d90.33923507410198!3d23.794796287072874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0f6ce6dead3%3A0x76ed5b10ba3a8a91!2sJohurabad%20Rd%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1719050843736!5m2!1sen!2sbd" 
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Connect with me on social media:</p>
+        <div class="social-icons">
+            <a href="https://www.youtube.com/channel/UCLEzguE3u1tTC4eWvO_oLMw" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://github.com/zubairjishan27" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61556018153124" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+        <p>&copy; 2024 Zubaer Rahman Jisan</p>
+    </footer>
+</body>
+</html>
