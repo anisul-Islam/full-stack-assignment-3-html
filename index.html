@@ -131,26 +131,27 @@
 
           <!-- Contact section  -->
         <section id="contact">
+           <form action="https://formspree.io/f/xblrrgjn" method="post">
             <h1>Contact Me📞</h1>
 
             <div>
                 <label for="name">Name:</label>
-            <input type="text" name="name" id="name"> 
+            <input type="text" name="name" id="name" required> 
             </div>
 
             <div>
                 <label for="email">Email:</label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" required>
             </div>
 
             <div>
                 <label for="age">Age:</label>
-                <input type="number" name="age" id="age" min="18" max="50">
+                <input type="number" name="age" id="age" min="18" max="50" required>
             </div> <br>
 
             <div>
                 <label for="url">Website:</label>
-                <input type="url" name="url" id="url">
+                <input type="url" name="url" id="url" accept="https://" required>
             </div> <br>
 
             <div>
@@ -187,6 +188,7 @@
              
            <!-- location map  -->
            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1028.8591316966092!2d90.67435770697463!3d22.657058475827533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sbd!4v1718545649655!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> </iframe>
+           </form>
         </section>
     </main>
 
