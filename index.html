@@ -166,12 +166,12 @@
                 
             <div>
                 <label for="name">Name:</label>
-            <input type="text" name="name" id="name" required> 
+            <input type="text" name="name" id="name" autocomplete="additional-name" required> 
             </div>
 
             <div>
                 <label for="email">Email:</label>
-                <input type="email" name="email" id="email" required>
+                <input type="email" name="email" id="email" autocomplete="email" required>
             </div>
 
             <div>
@@ -195,8 +195,8 @@
             </div> <br>
 
             <div>
-                <label for="country">Favourite Team:</label>
-                <input list="team" name="country" id="country" >
+                <label for="Favcountry">Favourite Team:</label>
+                <input list="team" name="Favcountry" id="Favcountry" autocomplete="name">
                 <datalist id="team">
                         <option value="Argentina"> 
                         <option value="Brazil"> 
@@ -233,7 +233,7 @@
             </div> <br>
 
             <label for="country">Country:</label>
-            <select name="country" id="country">
+            <select name="country" id="country" autocomplete="cc-given-name">
                 <option value="">Afghanistan</option>
                 <option value="">Bangladesh</option>
                 <option value="">Pakistan</option>
