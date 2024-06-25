@@ -161,7 +161,9 @@
         <section id="contact">
            <form action="https://formspree.io/f/xblrrgjn" method="post">
             <h1>Contact Me📞</h1>
-
+            <fieldset>
+                <legend>Personal Info</legend>
+                
             <div>
                 <label for="name">Name:</label>
             <input type="text" name="name" id="name" required> 
@@ -176,6 +178,7 @@
                 <label for="age">Age:</label>
                 <input type="number" name="age" id="age" min="18" max="50" required>
             </div> <br>
+            </fieldset>
 
             <div>
                 <label for="url">Website:</label>
@@ -189,6 +192,39 @@
             <div>
                 <label for="Experience">Experience:</label>
                 <input type="range" name="Experience" id="Experience" min="0" max="10">
+            </div> <br>
+
+            <div>
+                <label for="country">Favourite Team:</label>
+                <input list="team" name="country" id="country" >
+                <datalist id="team">
+                        <option value="Argentina"> 
+                        <option value="Brazil"> 
+                        <option value="France"> 
+                        <option value="Germany"> 
+                        <option value="Portugal"> 
+                        <option value="England">< 
+                        <option value="Croatia"> 
+                        <option value="Netherlands"> 
+                        <option value="Costarica"> 
+                        <option value="Ecuador"> 
+                        <option value="Nigeria"> 
+                        <option value="Italy"> 
+                        <option value="Spain"> 
+                        <option value="Peru"> 
+                        <option value="Combodia"> 
+                        <option value="Colombia"> 
+                        <option value="Chilie"> 
+                        <option value="South Korea"> 
+                        <option value="Japan"> 
+                        <option value="Russia"> 
+                        <option value="Australia">
+                        <option value="Bangladesh"> 
+                        <option value="Plastine"> 
+                        <option value="India"> 
+                        <option value="Bhutan"> 
+                        <option value="Srilanka">
+                </datalist>
             </div> <br>
 
             <div>
