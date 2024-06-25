@@ -5,10 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Portfolio</title>
         <meta name="keyword" content="enjamul islam, front-end developer, ui designer, developer, web designer, web developer" />
-
+        <!-- font-awesme cdn -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+        <!-- Google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+
         <style>
-            @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+            body {
+                font-family: "Inter", sans-serif;
+                background-color: rgb(255, 220, 255, 0.3);
+            }
         </style>
     </head>
     <body>
@@ -41,17 +49,112 @@
                     <h2>Skills and Expertise</h2>
 
                     <div>
-                        <ol>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>TailwindCSS</li>
-                            <li>Bootstrap</li>
-                            <li><bold>React Js</bold></li>
-                            <li>Express.js</li>
-                            <li><bold>MongoDB</bold></li>
-                        </ol>
+                        <table border="2" cellpadding="5" cellspacing="0" bordercollapse="collapse">
+                            <thead>
+                                <tr>
+                                    <th>Technology</th>
+                                    <th>Proficency</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>HTML</td>
+                                    <td rowspan="2">Expert</td>
+                                </tr>
+                                <tr>
+                                    <td>CSS</td>
+                                </tr>
+                                <tr>
+                                    <td>TailwindCSS</td>
+                                    <td rowspan="2">Advanced</td>
+                                </tr>
+                                <tr>
+                                    <td>Bootstrap</td>
+                                </tr>
+                                <tr>
+                                    <td>JavaScript</td>
+                                    <td rowspan="2">Intermediate</td>
+                                </tr>
+                                <tr>
+                                    <td>React</td>
+                                </tr>
+                                <tr>
+                                    <td>Express.js</td>
+                                    <td rowspan="2">Beginner</td>
+                                </tr>
+                                <tr>
+                                    <td>MongoDB</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">Design</th>
+                                </tr>
+                                <tr>
+                                    <td>UI Design</td>
+                                    <td>Expert</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
+
+                    <!-- Skills progress -->
+                    <div>
+                        <h3>Skills Progress</h3>
+                        <div>
+                            <div>
+                                <label for="htmlProgress">HTML: </label>
+                                <progress id="htmlProgress" value="95" max="100">95%</progress>
+                            </div>
+                            <div>
+                                <label for="cssProgress">CSS: </label>
+                                <progress id="cssProgress" value="90" max="100">90%</progress>
+                            </div>
+                            <div>
+                                <label for="tailwindProgress">TailwindCSS: </label>
+                                <progress id="tailwindProgress" value="85" max="100">85%</progress>
+                            </div>
+                            <div>
+                                <label for="bootstrapProgress">Bootstrap: </label>
+                                <progress id="bootstrapProgress" value="80" max="100">80%</progress>
+                            </div>
+                            <div>
+                                <label for="javascriptProgress">JavaScript: </label>
+                                <progress id="javascriptProgress" value="75" max="100">75%</progress>
+                            </div>
+                            <div>
+                                <label for="reactProgress">React: </label>
+                                <progress id="reactProgress" value="70" max="100">70%</progress>
+                            </div>
+                            <div>
+                                <label for="expressProgress">Express.js: </label>
+                                <progress id="expressProgress" value="65" max="100">65%</progress>
+                            </div>
+                            <div>
+                                <label for="mongodbProgress">MongoDB: </label>
+                                <progress id="mongodbProgress" value="60" max="100">60%</progress>
+                            </div>
+                            <div>
+                                <label for="uiProgress">UI Design: </label>
+                                <progress id="uiProgress" value="90" max="100">90%</progress>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience -->
+                     <div>
+                        <h3>Experience</h3>
+                        <div>
+                            <label for="webdesign">Web Design: </label>
+                            <meter id="webdesign" value="3" min="0" max="10">3 years</meter>
+                        </div>
+                        <div>
+                            <label for="webdevelopment">Web Development: </label>
+                            <meter id="webdevelopment" value="2" min="0" max="10">2 years</meter>
+                        </div>
+                        <div>
+                            <label for="uiux">UI/UX Design: </label>
+                            <meter id="uiux" value="3" min="0" max="10">3 years</meter>
+                        </div>
+                     </div>
                 </div>
             </section>
             <!-- End of Skills and Expertise -->
@@ -144,35 +247,43 @@
                     <h2>Contact Me</h2>
 
                     <div>
-                        <form>
+                        <form method="POST" action="https://formspree.io/f/xzzppjlj">
                             <div>
-                                <label>Name</label>
-                                <input type="text" name="name" />
+                                <label for="name">Name</label>
+                                <input id="name" type="text" name="name" required />
                             </div>
                             <div>
-                                <label>Email</label>
-                                <input type="email" name="email" />
+                                <label for="email">Email</label>
+                                <input id="email" type="email" name="email" required />
                             </div>
                             <div>
-                                <label>Subject</label>
-                                <input type="text" name="subbject" />
+                                <label for="subject">Subject</label>
+                                <select name="subject" id="subject" required>
+                                    <option value="webdesign">Web Design</option>
+                                    <option value="webdevelopment">Web Development</option>
+                                    <option value="uiux">UI/UX Design</option>
+                                    <option value="other">Other</option>
+                                </select>
                             </div>
                             <div>
-                                <label>Message</label>
-                                <textarea name="message"></textarea>
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" cols="30" rows="5" required></textarea>
                             </div>
                             <button type="submit">Submit</button>
                         </form>
                     </div>
 
-                    <!-- Map Location -->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29207.265435560093!2d90.40891267610797!3d23.786283833315878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7b71894d7cb%3A0x725a1e9ba77a8744!2sBadda%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1718279154130!5m2!1sen!2sbd" width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div>
+                        <h4>Visit my location</h4>
+                        <!-- Map Location -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29207.265435560093!2d90.40891267610797!3d23.786283833315878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7b71894d7cb%3A0x725a1e9ba77a8744!2sBadda%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1718279154130!5m2!1sen!2sbd" width="600" height="200" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
             </section>
             <!-- End of the contact -->
         </main>
 
-        <br>
+        <br />
         <!-- Start Footer Area -->
         <footer>
             <div>
