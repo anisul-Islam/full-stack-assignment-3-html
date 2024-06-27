@@ -65,17 +65,17 @@
          <!----------------------------
               section:introduction 
              ----------------------------->
-       <div id="intro">
-         <h1>About Me</h1>
-         <img src="images/DP.jpg" alt="">
-         <h2>Hi! I'm <em>Muhammad Ashraful.</em></h2>
+       <section id="intro">
+         <h1>&#129333;About Me</h1>
+         <img src="images/DP.jpg" alt="ashraful islam profile image">
+         <p>Hi! I'm <em>Muhammad Ashraful.</em></p>
          <p>I'm junior full-stack web developer and I work remotely from Bangladesh.</p>
-       </div>
+       </section>
        <!-----------------------
           section:skills 
          -------------------------- -->
-       <div id="skills">
-         <h1>Skills and Expertise</h1>
+       <section id="skills">
+         <h2>Skills and Expertise</h2>
            <ul>
              <li>HTML</li>
              <li>CSS</li>
@@ -106,12 +106,12 @@
             <div>
                <label for="jsProgress">JS:</label>
                <progress id="jsProgress" value="65" max="100">65</progress>
-        </div>
+        </section>
        <!-------------------
          section: project 
          --------------------->
-        <div id="Projects">
-         <h1>Projects</h1>
+        <section id="Projects">
+         <h2>Projects</h2>
           <div class="project">
              <h3><a target="_blank" href="https://pinchofyum.com/">Food-Blog</a></h3>
              <img src="images/foodblogs.png" alt="">
@@ -134,12 +134,12 @@
                 your broswer cannot suport this video
                 </video>
           </div>
-        </div>
+        </section>
         <!-------------------
           section : Education 
          ------------------------->
-         <div id="education">
-             <h1>Education and Experience</h1>
+         <section id="education">
+             <h2>Education and Experience</h2>
              <div>
                <label for="meter"> Experience level:</label>
          
@@ -174,26 +174,33 @@
                   </tr>
                </tbody>  
              </table>
-         </div>
+         </section>
  
          <!------------------
              section: from 
              ----------------->
  
-         <div id="from">
-             <h1>Contact Form</h1>
+         <section id="from">
+             <h2>Contact Form</h2>
              <form action="https://formspree.io/f/mdoqqovb" method="POST">
-                 <div>
-                     <label for="name">Name:</label>
-                     <input type="text" id="name" name="name" required>
-                 </div>
-                 <div>
-                     <label for="email">Email:</label>
-                     <input type="email" id="email" name="email" required>
-                 </div>
-                 <div>
-                    <label for="age">Age:</label>
-                    <input type="number" id="age" name="age" min="18" max="40" required>
+                <fieldset>
+                <legend>Personal information</legend>   
+                <div>
+                    <label for=" name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="18" max="40" required>
+            </div>
+            </fieldset>
+                <div>
+                <label for="fcolor">favaorite color:</label>
+                <input type="color" id="fcolor" name="name" required />
                 </div>
                 <div>
                     <label for="website">Website:</label>
@@ -220,10 +227,10 @@
                      <button type="reset">Clear</button>
                  </div>
              </form>
-         </div>
+         </section>
             <!-- section:social site -->
-          <div class="icons">
-            <h3>Follow Me</h3>
+          <section class="icons">
+            <h2>Follow Me</h2>
             <ul>
                 <li>
                     <a href="https://www.facebook.com/profile.php?id=100014427856879&mibextid=LQQJ4d" target="_blank">
@@ -247,7 +254,7 @@
                     </a>
                 </li>
             </ul>
-          </div>
+          </section>
      </main>
  
      <!-----------------------
