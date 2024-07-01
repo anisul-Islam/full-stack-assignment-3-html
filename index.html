@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hi this is Nayem from Bhola">
+    <meta name="keywords" content="Mohammad-Nayem, Nayem Portfolio">
+
+    <!-- font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+          <!-- navigation section  -->
+    <nav>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#education">Education and Experiaence</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <!-- main section  -->
+    <main>
+        <!-- Introduction section  -->
+       <section id="introduction">
+        <h1>Introduction👋</h1>
+        <img src="./img/me1.jpg" alt="Photo" width="200px" height="250px">
+        <h4>Hi Iam,</h4>
+        <h3>Mohammad Nayem</h3>
+        <p> I am a front-end developer. I like to do coding. I am a student of BSC in Degree. I am expert with HTML, CSS, Javascript, Bootstrap and React. I can build user friendly and responsive web page. <br> I am a problem solver at this time solved 100+ problems. I want to be a full-stack web developer and get a full-time remote job</p>
+       </section>
+
+       <!-- Skills and expertis section  -->
+        <section id="skills">
+            <h1>Skills and Expertis💼</h1>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>Git and Github</li>
+            </ul>
+
+            <!-- expetis section  -->
+             <table border="1" cellpadding="5" cellspacing="0">
+                <thead>
+                    <th>Technology</th>
+                    <th>Proficiency</th>
+                   <tr>
+                    <td>HTML</td>
+                    <td>Expert</td>
+                   </tr>
+                
+                   <tr>
+                    <td>CSS</td>
+                    <td>Intermediate</td>
+                   </tr>
+
+                   <tr>
+                    <td>Javascript</td>
+                    <td>Beginers</td>
+                   </tr>
+
+                   <tr>
+                    <td>Github</td>
+                    <td>Intermediate</td>
+                   </tr>
+                </thead>
+
+             </table>
+
+             <!-- Skill Progress  -->
+             <div id="skill_progress">
+                <h2>Skills Progress</h2>
+                <div>
+                    <label for="htmlProgress">HTML:</label>
+                    <progress id="htmlProgress" max="100" value="85">85%</progress>
+                </div>
+    
+                  <div>
+                    <label for="cssProgress">CSS:</label>
+                    <progress id="cssProgress" max="100" value="65">65%</progress>
+                </div>
+    
+                  <div>
+                    <label for="JsProgress">Javascript:</label>
+                    <progress id="JsProgress" max="100" value="10">10%</progress>
+                </div>
+             </div>
+
+             <div id="experience_level">
+                <h1>Experiance</h1>
+                <label for="experiance">Experiance</label>
+                <meter id="experiance" min="0" max="10" value="2">2</meter>
+             </div>
+        </section>
+
+        <!-- Project Shocase  -->
+         <section id="project">
+            <h1>Project💻</h1>
+            <p>Here is my recent project showcasing!!</p>
+            <div class="facebook-homepage">
+                <h5>1.Facebook Home page</h5>
+                <img src="./img/fbLogin.png" width="400px" alt="Site Photo">
+            </div>
+
+            <div class="furniture">
+                <h5>2.Furniture</h5>
+                 <a href="https://choose-your-furniture.netlify.app/">
+                    <img src="./img/Furniture.png" width="400px" alt="Site Photo">
+                 </a>
+            </div>
+
+            <div class="portfolio">
+                <h5>3.Portfolio</h5>
+                <a href="https://mohammad-nayem.netlify.app/">
+                    <img src="./img/Portfolio.png" width="400px" alt="Site Photo">
+                </a>
+            </div>
+         </section>
+
+         <!-- Educaton and Experiance  -->
+          <section id="education">
+            <h1>Educational Qualification📖	</h1>
+            <table border="1" cellpadding="5" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Exam</th>
+                        <th>Institution</th>
+                        <th>Passing Year</th>
+                    </tr>
+
+                    <tr>
+                        <td>JSC</td>     
+                        <td>A. Rob School and College</td>
+                        <td>2017</td>
+                    </tr>
+
+                    <tr>
+                        <td>SSC</td>     
+                        <td>A. Rob School and College</td>
+                        <td>2020</td>
+                    </tr>
+
+                    <tr>
+                        <td>HSC</td>     
+                        <td>Banglabazar Fatema Khanom Degree College</td>
+                        <td>2022</td>
+                    </tr>
+
+                    <tr>
+                        <td>BSC</td>     
+                        <td>Banglabazar Fatema Khanom Degree College</td>
+                        <td>On going</td>
+                    </tr>
+                </thead>
+            </table>
+          </section>
+
+          <!-- Contact section  -->
+        <section id="contact">
+           <form action="https://formspree.io/f/xpwazznb" method="post">
+            <h1>Contact Me📞</h1>
+            <fieldset>
+                <legend>Personal Info</legend>
+                
+            <div>
+                <label for="name">Name:</label>
+            <input type="text" name="name" id="name" autocomplete="additional-name" required> 
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" autocomplete="email" required>
+            </div>
+
+            <div>
+                <label for="age">Age:</label>
+                <input type="number" name="age" id="age" min="18" max="50" required>
+            </div> <br>
+            </fieldset>
+
+            <div>
+                <label for="url">Website:</label>
+                <input type="url" name="url" id="url" accept="https://" required>
+            </div> <br>
+
+                <label for="color">Favourite Color:</label>
+                <input type="color" name="color" id="color" value="#fff000">
+            </div> <br>
+
+            <div>
+                <label for="Experience">Experience:</label>
+                <input type="range" name="Experience" id="Experience" min="0" max="10">
+            </div> <br>
+
+            <div>
+                <label for="Favcountry">Favourite Team:</label>
+                <input list="team" name="Favcountry" id="Favcountry" autocomplete="name">
+                <datalist id="team">
+                        <option value="Argentina"> 
+                        <option value="Brazil"> 
+                        <option value="France"> 
+                        <option value="Germany"> 
+                        <option value="Portugal"> 
+                        <option value="England">< 
+                        <option value="Croatia"> 
+                        <option value="Netherlands"> 
+                        <option value="Costarica"> 
+                        <option value="Ecuador"> 
+                        <option value="Nigeria"> 
+                        <option value="Italy"> 
+                        <option value="Spain"> 
+                        <option value="Peru"> 
+                        <option value="Combodia"> 
+                        <option value="Colombia"> 
+                        <option value="Chilie"> 
+                        <option value="South Korea"> 
+                        <option value="Japan"> 
+                        <option value="Russia"> 
+                        <option value="Australia">
+                        <option value="Bangladesh"> 
+                        <option value="Plastine"> 
+                        <option value="India"> 
+                        <option value="Bhutan"> 
+                        <option value="Srilanka">
+                </datalist>
+            </div> <br>
+
+            <div>
+                <label for="image">Image:</label>
+                <input type="file" name="image" id="image" accept="image/*">
+            </div> <br>
+
+            <label for="country">Country:</label>
+            <select name="country" id="country" autocomplete="cc-given-name">
+                <option value="">Afghanistan</option>
+                <option value="">Bangladesh</option>
+                <option value="">Pakistan</option>
+                <option value="">India</option>
+                <option value="">Sri Lanka</option>
+                <option value="">Nepal</option>
+                <option value="">Australia</option>
+                <option value="">America</option>
+                <option value="">South Africa</option>
+                <option value="">West Indies</option>
+                <option value="">Argentina</option>
+                <option value="">Brazil</option>
+                <option value="">Combodia</option>
+                <option value="">South Korea</option>
+                <option value="">Japan</option>
+            </select>
+
+            <div>
+                <label for="message">Your Message Here:</label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your text here"></textarea> <br>
+           
+            <button type="submit">Submit</button>
+            <button type="reset">Clear</button>
+            </div>
+             
+           <!-- location map  -->
+           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1028.8591316966092!2d90.67435770697463!3d22.657058475827533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sbd!4v1718545649655!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Visit this Location"> </iframe>
+           </form>
+        </section>
+
+        <video width="250px" height="300px" controls>
+            <source src="./img/tothini.mp4">
+        </video>
+    </main>
+
+    <footer>
+        <div id="follow">
+            <h1>Follow Us</h1>
+            <div class="icon">
+                <a href="https://www.facebook.com/mdnayem13913" visit="Visit Facebook" target="_blank" rel="noopener"><i class="fa-brands fa-facebook" title="Facebook"></i></a>
+
+                <a href="https://www.instagram.com/nayem_sheikh1/" title="Visit Instagram" target="_blank" title="Instagram" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        <p>&copy; All right reserved by Nayem 2024</p>
+    </footer>
+</body>
+</html>
