@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="Portfolio, HTML, Web Developer, Siam">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Montserrat", sans-serif;
+            padding: 20px;
+            margin: 20px;
+        }
+        nav ul {
+            margin-bottom: 50px;
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            font-size: 1.5em;
+            margin-right: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #000;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        h1, h2, h3, p {
+            margin: 10px 0;
+        }
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+        progress, meter {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form label, form input, form select, form button {
+            margin-bottom: 10px;
+        }
+        .project-img {
+            width: 100px;
+            height: auto;
+        }
+    </style>
+    <title>Portfolio | Siam</title>
+</head>
+
+    <!-- Navigation Section -->
+    <nav>
+        <ul>
+            <li><a href="#introduction">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+<body>
+<main>
+        <!-- Introduction Section -->
+        <header id="introduction">
+            <h1>Siam</h1>
+            <p><strong>Welcome to my portfolio.</strong> I am a web developer passionate about creating beautiful websites.</p>
+            <p>I am interested in web development, design, and technology. My career goal is to become a full-stack developer.</p>
+        </header>
+        <hr>
+        <!-- Skills and Expertise Section -->
+        <section id="skills">
+            <h2>Skills and Expertise</h2>
+            <ul>
+                <li><strong>HTML</strong></li>
+                <li><em>CSS</em></li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+            </ul>
+            <ol>
+                <li>Project Planning</li>
+                <li>Design</li>
+                <li>Development</li>
+                <li>Testing</li>
+                <li>Deployment</li>
+            </ol>
+            <h3>Skills Progress</h3>
+            <label for="htmlProgress">HTML</label>
+            <progress value="90" max="100" id="htmlProgress">90%</progress>
+            <label for="cssProgress">CSS</label>
+            <progress value="85" max="100" id="cssProgress">85%</progress>
+    
+        </section>
+        <hr>
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div>
+                <a href="https://github.com/mdsiamulislam/AndroidPixEnc" target="_blank"><img src="images/image.png" alt="AndroidPixEnc" class="project-img">
+                <h3><strong>Project 1:</strong> Pixels: Image Encryption and Decryption App</h3></a>
+                <p>Pixels is an Android application designed for encrypting and decrypting images securely. This app was developed as a project submission for the CSE Spring Fest 2024 at Dhaka International University. <br><br>
+    
+                    The main concept of this application was inspired by the work of Fardin Kamal. You can find the original source code and inspiration at PixEnc.</p>
+            </div>
+            <hr />
+            <div>
+                <a href="https://github.com/mdsiamulislam/AndroidPixEnc" target="_blank"><img src="images/image2.png" alt="nature_food" class="project-img">
+                <h3><strong>Project 2:</strong> nature_food</h3></a>
+                <p>This project is a starting point for a Flutter application.</p>
+            </div>
+            <hr>
+            <div>
+                <a href="https://github.com/mdsiamulislam/resturent_pro" target="_blank"><img src="images/image2.png" alt="resturent_pro" class="project-img">
+                <h3><strong>Project 3:</strong>resturent_pro</h3></a>
+                <p>I done have any photo of this project . please visit the repo</p>
+            </div>
+        </section>
+    
+        <hr>
+        <!-- Education and Experience Section -->
+        <section id="education">
+            <h2>Education and Experience</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Institution/Company</th>
+                        <th>Degree/Position</th>
+                        <th>Duration</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Bangbari Chowbaria School</td>
+                        <td>JSC</td>
+                        <td>start - 2018</td>
+                    </tr>
+                    <tr>
+                        <td>SSC</td>
+                        <td>2018 - 2018</td>
+                    </tr>
+                    <tr>
+                        <td>DIU</td>
+                        <td>BSc in CSE</td>
+                        <td>2018 - 2022</td>
+                    </tr>
+                    <tr>
+                        <td>ABC Tech</td>
+                        <td>Android Developer</td>
+                        <td>2022 - Present</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    
+        <!-- Contact Form Section -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <form action="https://formspree.io/f/mnnanjlo" method="POST">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+                <label for="subject">Subject</label>
+                <input type="text" name="subject" id="subject" required>
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="5" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d439.0914094772878!2d90.43698605735953!3d23.79590441592795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1ssayed%20nagar%20auto%20stand!5e0!3m2!1sen!2sbd!4v1720772258877!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    
+</main>
+
+</body>
+
+    <!-- Footer Section -->
+    <footer>
+        <h3>Follow Me</h3>
+        <ul>
+            <li><a href="https://www.facebook.com/mdsiamulislamsoaib"><i class="fa-brands fa-facebook"></i> Facebook Page</a></li>
+        </ul>
+        <hr>
+        <p>&copy; 2024 My Portfolio</p>
+    </footer>
+
+</html>
