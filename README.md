@@ -1,3 +1,5 @@
+https://mohin-u.github.io/All-three-assignments-of-html/
+
 # HTML Portfolio Assignment
 
 ## A. [HTML Basic Part](https://www.youtube.com/live/gqvrn5R8tzc?si=e8Z89nwwmEao0R-F)

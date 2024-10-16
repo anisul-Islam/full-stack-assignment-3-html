@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="my portfolio,Mohin uddin">
+    <meta name="description" content="portfolio,introduction,Mohin">
+    <meta name="author" content="Mohin Uddin">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <title>My portfolio</title>
+    <style>
+        body {
+            background-color: beige;
+            font-family: "playfair display", sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <!--Section: Navbar-->
+        <nav>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#skills">Skills & expertise</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education & Experiences</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!--Section:Introduction-->
+        <section id="introduction">
+            <header>
+                <h1>Mohin Uddin</h1>
+                <img src="Image/Mohin-u.jpg" alt="Mohin" height="250">
+                <p>A <em>tech-enthusiast</em> and a <em>bibliophile</em>.<br>
+                Still, I'm uncertain what i would like to do but i would 
+                like to do something<br> that would be beneficial for our mankind</p> <hr/>
+
+                <h2>1. Introduction:</h2>
+                <p><strong>Present address:</strong>Dhaka,Azimpur</p>
+                <p><strong>Permanent address:</strong>Cumilla,Barura</p>
+            </header>
+        </section>
+
+        <!--Section:Skills and expertise-->
+        <section id="skills">
+            <h2>2.1. Skills:</h2>
+            <ul>
+                <li>Html</li>
+                <li>Css</li>
+                <li>Javascript</li>
+                <li>Python</li>
+                <li>React.js</li>
+            </ul>
+            <h2>2.2. Expertise:</h2>
+            <ol>
+                <li>Html</li>
+                <li>Css</li>
+                <li>Javacript</li>
+                <li>React.js</li>
+            </ol>
+        </section>
+
+        <!--Section:Projects-->
+        <section id="projects">
+            <h2>3. Projects:</h2>
+            <ol>
+                <li><a href="https://github.com/Mohin-U/Portfolio-Html" target="_blank">My portfolio</a></li>
+                <img src="projects/My portfolio.png" alt="My portfolio" height="300">
+                <li><a href="https://github.com/Mohin-U/Github" target="_blank">Github</a></li>
+                <img src="projects/Github.png" alt="Github" height="300">
+                <li><a href="https://github.com/Mohin-U/Github-Exercise" target="_blank">Github-Exercise</a></li>
+                <img src="projects/Github1.png" alt="Github-Exercise" height="300">
+            </ol>
+
+
+        </section>
+
+        <!--Section:Education and Experience:-->
+        <section id="education">
+           <h2>4. Education & Experience:</h2> 
+           <table border="1" cellpadding="5" cellspacing="2">
+            <thead>
+                <tr>
+                    <th>Institution</th>
+                    <th>Degree</th>
+                    <th>Passing year</th>
+                </tr>
+            <tbody>
+                <tr >
+                    <td>Barura hazi nowab ali pilot high school</td>
+                    <td>SSC</td>
+                    <td>2016</td>
+                </tr>
+                <tr>
+                    <td>Milestone College</td>
+                    <td>HSC</td>
+                    <td>2018</td>
+                </tr>
+                <tr>
+                    <td>Green university of Bangladesh</td>
+                    <td>Bsc in computer Science</td>
+                    <td>Running</td>
+                </tr>
+            </tbody>    
+            </thead>
+           </table>
+
+        </section>
+
+        <!--Section:Contact form-->
+        <section id="contact">
+            <h2>5. Contact:</h2>
+            <form action="https://formspree.io/f/xnnanjeo"
+            method="POST">
+               <fieldset>
+                <legend>My personal information</legend>
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div>
+                        <label for="age">Age</label>
+                        <input type="number" id="age" max="22" min="18" name="age">
+                    </div>
+               </fieldset>
+                <div>
+                    <label for="colour">Favourite colour</label>
+                    <input type="color" id="colour" name="favourite">
+                </div>
+                <div>
+                    <label for="progress">Html</label>
+                    <progress id="progress" value="80" max="100">80%</progress>
+                </div>
+                <div>
+                    <label for="progress">Css</label>
+                    <progress id="progress" value="5" max="100">5%</progress>
+                </div>
+                <div>
+                    <label for="experience">Experience</label>
+                    <meter id="experience" min="0" max="10" value="1"></meter>
+                </div>
+                <div>
+                    <label for="subject">Subject</label>
+                    <select name="subject" id="subject">
+                        <option value="null"></option>
+                        <option value="cse">CSE</option>
+                        <option value="eee">EEE</option>
+                        <option value="textile">Textile</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="p-languages">Favorite languages</label>
+                    <input list="languages" id="p-languages" name="languages">
+                    <datalist id="languages">
+                        <option value="Spanish"></option>
+                        <option value="French"></option>
+                    </datalist>
+                </div>
+                <div>
+                    <label for="image">Upload image</label>
+                    <input type="file" id="image" name="image">
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+                <button type="submit">Submit</button>
+                <button type="reset">Clear</button>
+            </form>
+        </section>
+
+        <!--Footer segment-->
+        <footer>
+            <a href="tel:01971409247">Call me</a>
+            <a href="mailto:Mohin678@yahoo.com">Email</a><br>
+            <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i>Youtube</a>
+            <a href="https://github.com/"><i class="fa-brands fa-github"></i>Github</a>
+        </footer>
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.1369955612918!2d91.13388507395798!3d23.419417901404994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37547e78b6312e8d%3A0xa9c070c9b3e0d1b9!2sComilla%20University!5e0!3m2!1sen!2sbd!4v1720783456107!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </main>
+</body>
+</html>
