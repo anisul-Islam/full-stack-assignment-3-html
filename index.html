@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="Portfolio, HTML, Css">
+    <meta name="description" content="Hi, I am Sultan Mahmud here to help to build excellent web application for your needs">
+    <meta name="Author" content="Sultan Mahmud">
+    <title>Portfolio Website</title>
+
+    <!-- Linked CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <!-- Header > Starts Here -->
+     <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">About me</a></li>
+                <li><a href="#">Contact me</a></li>
+            </ul>
+        </nav>
+     </header>
+     <!-- Header > Ends Here -->
+
+     <main id="main_content">
+        <!-- About me <> Starts Here -->
+         <section id="intro">
+            <h1 class="intro_title">Sultan Mahmud</h1>
+            <p class="intro_welcome_message">Welcome to my portfolio</p> 
+            <p class="intro_description">Fullstack  web developer. I'm highly interested to create scalable web application for business holders. In future my goal is to become super competitive programmer also.</p>
+         </section>
+        <!-- About me <> Ends Here -->
+
+        <!-- Skills and Expertise <> Starts Here -->
+         <section id="skills">
+            <h2>What technologies do I know?</h2>
+            <ul>
+                <li>HTML</li>
+                <li>Css</li>
+                <li>JavaScript</li>
+                <li>React js</li>
+                <li>Node js</li>
+                <li>Express js</li>
+                <li>MongoDB</li>
+                <li>Figma</li>
+                <li>Notion</li>
+                <li>Git & Github</li>
+                <li>Tailwind css</li>
+                <li>Bootstrap</li>
+            </ul>
+            <h3>My expertise areas</h3>
+            <ol>
+                <li>HTML</li>
+                <li>Css</li>
+                <li>JavaScript</li>
+                <li>React js</li>
+                <li>Tailwind css</li>
+                <li>Bootstrap</li>
+                <li><strong>Frontend Development</strong></li>
+            </ol>
+            <div class="skills_meter">
+                <div class="progressber">
+                    <label for="skills">Skills on Frontend</label>
+                    <progress id="skills" max="100" value="80">80%</progress>
+                </div>
+                <div class="meter">
+                    <label for="meter">Meter</label>
+                    <meter value="2" min="0" max="10"></meter>
+                </div>
+            </div>
+         </section>
+        <!-- Skills and Expertise <> Ends Here -->
+
+        <!-- My projects <> Starts Here -->
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="my_projects_recipe">
+               <a href="#"> Recepi Page</a>
+               <p>This is an omlete recepi project. where you can learn how to make omlet recepi</p>
+               <img src="images/recepi-page.jpg" alt="recepi-page">
+            </div>
+            <div class="my_projects_social_link">
+               <a href="#">Social Link</a>
+               <p>This projects shows your social links for your profile</p>
+               <img src="images/social-link.jpg" alt="social-link">
+            </div>
+            <div class="my_projects_bento_grid">
+               <a href="#">Bento Grid</a>
+               <p>It's a simple card for blog websties</p>
+               <img src="images/bento-grid.jpg" alt="bento-grid">
+            </div>
+        </section>
+        <!-- My projects <> Ends Here -->
+
+        <!-- Education and Experience <> Starts Here -->
+         <section id="education">
+            <table border="1" cellspacing="0" cellspacing="0" cellpadding="5px">
+                <thead>
+                    <th>Institution</th>
+                    <th>Degree</th>
+                    <th>Duration</th>
+                </thead>
+                <tbody>
+                    <td>Madrasha</td>
+                    <td>Secondary School Certificate</td>
+                    <td>2013-2014</td>
+                </tbody>
+            </table>
+         </section>
+        <!-- Education and Experience <> Ends Here -->
+
+        <!-- Contact me <> Starts Here -->
+         <section id="contact_form">
+            <h2>Find me in...</h2>
+            <div>
+                <iframe title="My Location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116717.97795840881!2d89.04235953368858!3d23.909581585692653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fe965536b7d61f%3A0x28fea367efdb38c9!2sKushtia%2C%20Bangladesh!5e0!3m2!1sen!2siq!4v1733800616034!5m2!1sen!2siq" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <form action="https://formspree.io/f/xyzyapez" method="POST">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div>
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject">
+                </div>
+                <div>
+                    <label for="message">Write Message</label>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+         </section>
+        <!-- Contact me <> Ends Here -->
+
+        <!-- Footer <> Starts Here -->
+         <footer>
+            <div class="social_links">
+                <h2>Follow me</h2>
+                <a href="https://web.facebook.com/marketersultan.me/"><i class="fa-brands fa-square-facebook"></i>Facebook</a>
+            </div>
+            <p>&copy; All rights reserved by Sultan Mahmud</p>
+         </footer>
+        <!-- Footer <> Ends Here -->
+     </main>
+
+     <!-- Font Awesome CDN -->
+     <script src="https://kit.fontawesome.com/19e8a8a635.js" crossorigin="anonymous"></script>
+</body>
+</html>
