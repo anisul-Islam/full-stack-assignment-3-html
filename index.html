@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="intermediate assignment, htmt 2nd homework">
+    <meta name="description" content="full stack assignment for html intermediate part">
+    <meta name="author" content="Naeem Chowdhury Rehad">
+    <title>Intermediate Assignment</title>
+    
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<style>
+    body{
+        background-color: rgb(235, 226, 214);
+        font-family: "Open Sans", sans-serif;
+    }
+</style>
+</head>
+<body>
+    <main>
+        <!-- advanced table: using rowspan & colspan -->
+        <section>
+            <table border="1" cellspacing="0" cellpadding="10">
+                <caption><strong><em>Popular Tech Brands Grouped by Device Type and Model Series</em></strong></caption>
+                <thead>
+                    <tr>
+                        <th colspan="4">Electronic Device Brands</th>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Computers & Peripherals</th>
+                        <th colspan="2">Mobiles & Smart Devices</th>
+                    </tr>
+                    <tr>
+                        <th>Brands</th>
+                        <th>Model numbers/Series</th>
+                        <th>Brands</th>
+                        <th>Model numbers/Series</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Apple</td>
+                        <td>MacBook pro, iMac</td>
+                        <td>Samsung</td>
+                        <td>Galaxy S, Galaxy Z</td>
+                    </tr>
+                    <tr>
+                        <td>Dell</td>
+                        <td>XPS, Inspiron</td>
+                        <td>Apple</td>
+                        <td>iphone 15. Apple watch</td>
+                    </tr>
+                    <tr>
+                        <td>HP</td>
+                        <td>Pavilion, Envy</td>
+                        <td>Google</td>
+                        <td>Pixel 8, Pixel Fold</td>
+                    </tr>
+                    <tr>
+                        <td>Lenovo</td>
+                        <td>ThinkPad, Yoga</td>
+                        <td>Sony</td>
+                        <td>Xperia 1, PlayStation 5</td>
+                    </tr>
+                    <tr>
+                        <td>Microsoft</td>
+                        <td>Surface Pro, Surface Laptop</td>
+                        <td>Xiaomi</td>
+                        <td>Mi 13, Redmi Note</td>
+                    </tr>
+                    <tr>
+                        <td>Asus</td>
+                        <td>ROG, Zenbook</td>
+                        <td>OnePlus</td>
+                        <td>OnePlus 11, OnePlus Pad</td>
+                    </tr>
+                    <tr>
+                        <td>Acer</td>
+                        <td>Predator, Swift</td>
+                        <td>Oppo</td>
+                        <td>Find X, Reno</td>
+                    </tr>
+                    <tr>
+                        <td>Logitech</td>
+                        <td>MX Master, G Pro</td>
+                        <td>Huawei</td>
+                        <td>Mate 60, P60</td>
+                    </tr>
+                    <tr>
+                        <td>Razer</td>
+                        <td>Blade, DeathAdder</td>
+                        <td>LG</td>
+                        <td>Velvet, Wing</td>
+                    </tr>
+                    <tr>
+                        <td>Corsair</td>
+                        <td>Vengeance, K100	</td>
+                        <td>Motorola</td>
+                        <td>Edge, Moto G</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section> <br />		
+
+        <!-- advanced form & using formspree.io to send submitted date to email -->
+        <section>
+            <form action="https://formspree.io/f/xdkynkdr"
+            method="POST">
+            <h3>Your Opinion Matters</h3>
+            <ul>
+                <li>
+                    <label for="name">Name :</label>
+                    <input required type="text" name="name" id="name">
+                </li> <br />
+                <li>
+                    <label for="email">Email :</label>
+                    <input required type="email" name="email" id="email"> 
+                </li> 
+                <li>
+                    <p>What emotions are visiting you right now?</p> 
+                    <ul type="square">
+                        <li>
+                            <label for="anger">Anger</label>
+                            <input type="checkbox" name="anger" id="anger">
+                        </li>
+                        <li><label for="sad">Sad</label>
+                            <input type="checkbox" name="sad" id="sad">
+                        </li>
+                        <li><label for="happy">Happy</label>
+                            <input type="checkbox" name="happy" id="happy">
+                        </li>
+                        <li><label for="ambivalent">Ambivalent</label>
+                            <input type="checkbox" name="ambivalent" id="ambivalent">
+                        </li> 
+                    </ul>
+                </li>
+                <li>
+                    <p>How satisfied were you with my project</p>
+                    <ul type="square">
+                        <li><label for="very-satisfied ">Very satisfied </label>
+                    <input type="radio" name="very-satisfied" id="very-satisfied">
+                        </li>
+                        <li>
+                            <label for="satisfied ">Satisfied </label>
+                            <input type="radio" name="satisfied" id="satisfied">
+                        </li>
+                        <li>
+                            <label for="didn't-care">Didn't care </label>
+                            <input type="radio" name="didn't-care" id="didn't-care">
+                        </li>
+                        <li>
+                            <label for="dissatisfied">Dissatisfied</label>
+                            <input type="radio" name="dissatisfied" id="dissatisfied">
+                        </li>
+                        <li>
+                            <label for="very-dissatisfied">Very dissatisfied</label>
+                            <input type="radio" name="very-dissatisfied" id="very-dissatisfied">
+                        </li>
+                    </ul>
+                </li> <br />
+                <li>
+                    <label for="comment">Further Comment :</label>
+                    <textarea name="comment" id="comment" cols="30" ></textarea>
+                </li> <br />
+                <li>
+                    <label for="bio">Short Bio about you</label>
+                    <input type="text" name="bio" id="bio">
+                </li> <br />
+                <li> 
+                    <label for="image">Choose your photo</label>
+                    <input type="file" name="image" id="image" accept="image/*">
+                </li> <br />
+                <li>
+                    <label for="location">Select location :</label>
+                    <select required name="location" id="location">
+                        <option value="" selected disabled>-----Select your division-----</option>
+                        <option value="barishal">Barisal</option>
+                        <option value="chattofram">Chattogram</option>
+                        <option value="dhaka">Dhaka</option>
+                        <option value="khulna">Khulna</option>
+                        <option value="mymensingh">Mymensingh</option>
+                        <option value="rajshahi">Rajshahi</option>
+                        <option value="sylhet">Sylhet </option>
+                    </select>
+                </li>
+            </ul>
+            <button type="submit">Submit</button>
+            <button type="reset">Clear</button>
+
+            </form>
+        </section> <br />
+
+        <!-- html5: progress & meter -->
+        <section>
+            <h3>My learning progress : </h3>
+            <progress max="10" value="4"></progress> <br /> <br />
+            <label for="html">HTML</label>
+            <meter value="60" max="100"></meter> <br />
+            <label for="html">CSS</label>
+            <meter value="30" max="100"></meter> <br />
+            <label for="html">JavaScript</label>
+            <meter value="5" max="100"></meter>
+        </section>
+
+        <!-- added google map -->
+        <section>
+            <h3>Location Overview</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14507.462936293403!2d91.66523333084741!3d24.628312097837973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37510e194aabbcbf%3A0x1afa79b79d3726f7!2sSherpur!5e0!3m2!1sen!2sbd!4v1762560480752!5m2!1sen!2sbd" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="my location"></iframe>
+        </section>
+			
+			
+			
+		
+
+
+    </main>
+</body>
+<footer>
+    <h3>Find me on social media</h3>
+    <i class="fa-brands fa-square-facebook"></i>
+    <a href="https://www.facebook.com/@naeemchowdhuryrehad" target="_blank">
+        <label for="facebook">Facebook</label>
+    </a>
+    <i class="fa-brands fa-square-youtube"></i>
+    <a href="https://www.youtube.com/@naeemchowdhuryrehad" target="_blank">
+        <label for="facebook">YouTube</label>
+    </a>
+</footer>
+</html>
