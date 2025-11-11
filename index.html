@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="application form, registration form">
+    <meta name="description" content="this is a application form for the client">
+    <meta name="author" content="Naeem Chowdhury">
+    <title>Application Form</title>
+</head>
+<body>
+    <main>
+            <form>
+
+        <!-- Personal Details -->
+    <fieldset>
+        <legend>Personal Details</legend>
+        <label for="name">Applocant's full name :</label>
+        <select name="name" id="name">
+            <option value="" selected disabled>--Select--</option>
+            <option value="mr">Mr</option>
+            <option value="mrs">Mrs</option>
+        </select>
+        <input type="text" name="name" id="name">
+        <label for="responsibility">Care Of :</label>
+        <input type="radio" name="parents" id="parents">
+        <label for="parents">Parents</label>
+        <input type="radio" name="guardian" id="guardian"> 
+        <label for="guardian">Guardian</label> <br /> <br />
+        
+        <label for="fathername">Father's Name :</label>
+        <select id="fathername" name="fathername">
+            <option value="mr" selected disabled>Mr.</option>
+        </select>
+        <input type="text" name="fathername" id="fathername">
+        <label for="mothername">Mother Name :</label>
+        <select name="mothername" id="mothername">
+            <option value="mrs" selected disabled>Mrs.</option>
+        </select>
+        <input type="text" name="mothername" id="mothername"> <br /><br />
+        
+        <label for="gender">Gender :</label>
+        <input type="radio" name="male" id="male">
+        <label for="male">Male</label>
+        <input type="radio" name="female" id="female">
+        <label for="female">Female</label>
+        <input type="radio" name="other" id="other">
+        <label for="other">Other</label>
+        <label for="birthday">Date of Birth :</label>
+        <input type="date" name="birthday" id="birthday"> <br /> <br />
+
+        <label for="maritalstatus">Marital Status :</label>
+        <select name="maritalstatus" id="maritalstatus">
+            <option value="" selected disabled>--Select--</option>
+            <option value="married">Married</option>
+            <option value="unmarried">Unmarried</option>
+            <option value="single">Single</option>
+        </select>
+        <label for="category">Category :</label>
+        <select name="category" id="category">
+            <option value="" selected disabled>--Select--</option>
+        </select> <br /> <br />
+
+        <label for="handicapped">Handicapped :</label>
+        <input type="radio" name="no" id="no">
+        <label for="no">No</label>
+        <input type="radio" name="yes" id="yes">
+        <label for="yes">Yes</label>
+
+        <label for="ExServiceman">Ex-Serviceman :</label>
+        <input  type="radio" name="no" id="no">
+        <label for="no">No</label>
+        <input type="radio" name="yes" id="yes"> 
+        <label for="yes">Yes</label> <br /> <br />
+
+        <label for="ews">EWS :</label>
+        <input type="radio" name="no" id="no">
+        <label for="no">No</label>
+        <input type="radio" name="yes" id="yes">
+        <label for="yes">Yes</label>
+        <label for="religion">Religion :</label>
+        <select name="religion" id="religion">
+            <option value="" selected disabled>--Select--</option>
+            <option value="muslim">Muslim</option>
+            <option value="hindu">Hindu</option>
+            <option value="others">Others</option>
+        </select>
+    </fieldset>
+
+    <!-- Contact Details< -->
+    <fieldset>
+        <legend>Contact Details</legend>
+        <label for="number">Mobile Number :</label>
+        <input type="tel" name="number" id="number">
+        <label for="email">Email ID :</label>
+        <input type="email" name="email" id="email">  <br /> <br />
+        <label for="address1">Address Line 1 :</label>
+        <input type="text" name="address1" id="address1">
+        <label for="address2">Address Line 2 :</label> 
+        <input type="text" name="address2" id="address2"><br /> <br />
+        <label for="city">City :</label>
+        <input type="text" name="city" id="city">
+        <label for="state">State :</label>
+        <select name="state" id="state">
+            <option value="" selected disabled>--Select--</option>
+            <option value="sylhet">Sylhet</option>
+            <option value="dhaka">Dhaka</option>
+            <option value="khulna">Khulna</option>
+            <option value="dinajpur">Dinajpur</option>
+            <option value="rangpur">Rangpur</option>
+        </select> <br /> <br />
+        <label for="postCode">Post Code :</label>
+        <input type="text" name="postCode" id="postCode">
+    </fieldset>
+
+    <!-- Qualification Details -->
+    <fieldset>
+        <legend>Qualification Details</legend>
+        <table cellpadding="5">
+            <thead>
+                <tr>
+                    <th>Sr. No.</th>
+                    <th>Qualification</th>
+                    <th>Board/University</th>
+                    <th>Passing Year</th>
+                    <th>Maximum Marks</th>
+                    <th>Marks Obtain</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1.</td>                  
+                    <td id="qualification1">
+                        
+                        <label>Choose one
+                            <select id="qualification1" name="qualification1">
+                            <option value="" selected disabled>--Select--</option>
+                            <option value="phd">PhD</option>
+                            <option value="masters">Masters</option>
+                            <option value="degree">Degree</option>
+                            <option value="hsc">HSC</option>
+                            <option value="ssc">SSC</option>
+                            <option value="jsc">JSC</option>
+                            <option value="psc">PSC</option>
+                        </select>
+                        </label>
+                        
+                    </td>
+
+                    <td id="boardName"><input type="text" id="boardName" placeholder="Board/University Name"></td>
+                    <td id="passingYear"><input type="text" id="passingYear" placeholder="Passing Year"></td>
+                    <td id="maximumMarks"><input type="text" id="maximumMarks" placeholder="Maximum Marks"></td>
+                    <td id="marksObtain"><input type="text" id="marksObtain" placeholder="Marks Obtain"></td>
+                </tr><tr>
+                    <td>2.</td>
+                    <td id="qualification2">
+                        <label>Choose one
+                            <select id="qualification2" name="qualification2">
+                            <option value="" selected disabled>--Select--</option>
+                            <option value="phd">PhD</option>
+                            <option value="masters">Masters</option>
+                            <option value="degree">Degree</option>
+                            <option value="hsc">HSC</option>
+                            <option value="ssc">SSC</option>
+                            <option value="jsc">JSC</option>
+                            <option value="psc">PSC</option>
+                        </select>
+                        </label>
+                    </td>
+
+                    <td id="boardName"><input type="text" id="boardName" placeholder="Board/University Name"></td>
+                    <td id="passingYear"><input type="text" id="passingYear" placeholder="Passing Year"></td>
+                    <td id="maximumMarks"><input type="text" id="maximumMarks" placeholder="Maximum Marks"></td>
+                    <td id="marksObtain"><input type="text" id="marksObtain" placeholder="Marks Obtain"></td>
+                </tr><tr>
+                    <td>3.</td>
+                    <td id="qualification3">
+                        <label>Choose one
+                            <select id="qualification3" name="qualification3">
+                            <option value="" selected disabled>--Select--</option>
+                            <option value="phd">PhD</option>
+                            <option value="masters">Masters</option>
+                            <option value="degree">Degree</option>
+                            <option value="hsc">HSC</option>
+                            <option value="ssc">SSC</option>
+                            <option value="jsc">JSC</option>
+                            <option value="psc">PSC</option>
+                        </select>
+                        </label>
+                    </td>
+
+                    <td id="boardName"><input type="text" id="boardName" placeholder="Board/University Name"></td>
+                    <td id="passingYear"><input type="text" id="passingYear" placeholder="Passing Year"></td>
+                    <td id="maximumMarks"><input type="text" id="maximumMarks" placeholder="Maximum Marks"></td>
+                    <td id="marksObtain"><input type="text" id="marksObtain" placeholder="Marks Obtain"></td>
+                </tr><tr>
+                    <td>4.</td>
+                    <td id="qualification4">
+                        <label>Choose one
+                            <select id="qualification4" name="qualification4">
+                            <option value="" selected disabled>--Select--</option>
+                            <option value="phd">PhD</option>
+                            <option value="masters">Masters</option>
+                            <option value="degree">Degree</option>
+                            <option value="hsc">HSC</option>
+                            <option value="ssc">SSC</option>
+                            <option value="jsc">JSC</option>
+                            <option value="psc">PSC</option>
+                        </select>
+                        </label>
+                    </td>
+
+                    <td id="boardName"><input type="text" id="boardName" placeholder="Board/University Name"></td>
+                    <td id="passingYear"><input type="text" id="passingYear" placeholder="Passing Year"></td>
+                    <td id="maximumMarks"><input type="text" id="maximumMarks" placeholder="Maximum Marks"></td>
+                    <td id="marksObtain"><input type="text" id="marksObtain" placeholder="Marks Obtain"></td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset>
+
+    <!-- Language Knowledge -->
+    <fieldset>
+        <legend>Language Knowledge</legend>
+        <table>
+            <thead>
+                <tr>
+                    <th>Language</th>
+                    <th>Reading</th>
+                    <th>Writing</th>
+                    <th>Spoken</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Hindi</td>
+                    <td id="reading">
+                        <label for="reading"><input type="checkbox" id="reading">Tick</label>  
+                    </td>
+
+                    <td id="writing">
+                        <label for="writing"><input type="checkbox" id="writing">Tick</label>
+                    </td>
+
+                    <td id="spoken">
+                        <label for="spoken"><input type="checkbox" id="spoken">Tick</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>English</td>
+                    <td id="reading">
+                        <label for="reading"><input type="checkbox" id="reading">Tick</label>  
+                    </td>
+
+                    <td id="writing">
+                        <label for="writing"><input type="checkbox" id="writing">Tick</label>
+                    </td>
+
+                    <td id="spoken">
+                        <label for="spoken"><input type="checkbox" id="spoken">Tick</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Urdu</td>
+                    <td id="reading">
+                        <label for="reading"><input type="checkbox" id="reading">Tick</label>  
+                    </td>
+
+                    <td id="writing">
+                        <label for="writing"><input type="checkbox" id="writing">Tick</label>
+                    </td>
+
+                    <td id="spoken">
+                        <label for="spoken"><input type="checkbox" id="spoken">Tick</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Bangla</td>
+                    <td id="reading">
+                        <label for="reading"><input type="checkbox" id="reading">Tick</label>  
+                    </td>
+
+                    <td id="writing">
+                        <label for="writing"><input type="checkbox" id="writing">Tick</label>
+                    </td>
+
+                    <td id="spoken">
+                        <label for="spoken"><input type="checkbox" id="spoken">Tick</label>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset>
+
+    <!-- Identification Details -->
+    <fieldset>
+        <legend>Identification Details</legend>
+        <label for="nid">NID Card Number :</label>
+        <input type="text" name="nid" id="nid">
+        <label for="passport">Passport Number :</label>
+        <input type="text" name="passport" id="passport"> <br /> <br />
+        <label for="image">Upload Photo :</label>
+        <input type="file" name="image" id="image" accept="image/*">
+        <label for="signature">Upload Signature :</label>
+        <input type="file" name="signature" id="signature">
+    </fieldset> <br /> <br />
+
+    <button type="button">Back</button>
+    <button type="reset">Clear</button>
+    <button type="submit">Submit</button>
+</form>
+    </main>
+</body>
+</html>
